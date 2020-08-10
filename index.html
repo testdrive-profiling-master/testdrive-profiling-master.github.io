@@ -192,7 +192,6 @@
 							Then type the following commands.
 							<pre>
 
-
 git clone https://github.com/testdrive-profiling-master/release TestDrive
 git clone https://github.com/testdrive-profiling-master/profiles Profiles
 cd TestDrive
@@ -201,6 +200,18 @@ cd ../Profiles/Meitner
 project.profile			<font style="color:gray;">// open sample project...</font>
 							</pre>
 							Done! The first execution can take a long time.
+                        </li>
+                    </ul>
+					<br>
+					<p  class="subheading mb-3">2. Update.</p>
+					<ul class="fa-ul mb-0">
+                        <li>
+                           Do following commands.
+							<pre>
+
+git -C %TESTDRIVE_DIR% pull
+git -C %TESTDRIVE_PROFILE% pull
+							</pre>
                         </li>
                     </ul>
                 </div>
