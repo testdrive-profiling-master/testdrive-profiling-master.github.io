@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>TestDrive Profilig Master Wiki</title>
-        <link rel="stylesheet" href="editormd/css/editormd.preview.css" />
-		<link rel="stylesheet" href="editormd/lib/codemirror/codemirror.min.css" />
+        <link rel="stylesheet" href="../editormd/css/editormd.preview.css" />
         <style>            
             .editormd-html-preview {
                 width: 90%;
@@ -16,18 +15,15 @@
 		<div id="editormd-view">
 		   <textarea style="display:none;" name="editormd-markdown-doc"></textarea>               
 		</div>
-        <script src="editormd/js/jquery.min.js"></script>
-		<script src="editormd/lib/codemirror/codemirror.min.js"></script>
-		<script src="editormd/lib/codemirror/addons.min.js"></script>
-		<script src="editormd/lib/codemirror/modes.min.js"></script>
-        <script src="editormd/lib/marked.min.js"></script>
-        <script src="editormd/lib/prettify.min.js"></script>
-        <script src="editormd/lib/raphael.min.js"></script>
-        <script src="editormd/lib/underscore.min.js"></script>
-        <script src="editormd/lib/sequence-diagram.min.js"></script>
-        <script src="editormd/lib/flowchart.min.js"></script>
-        <script src="editormd/lib/jquery.flowchart.min.js"></script>
-        <script src="editormd/editormd.js"></script>
+        <script src="../editormd/js/jquery.min.js"></script>
+        <script src="../editormd/lib/marked.min.js"></script>
+        <script src="../editormd/lib/prettify.min.js"></script>
+        <script src="../editormd/lib/raphael.min.js"></script>
+        <script src="../editormd/lib/underscore.min.js"></script>
+        <script src="../editormd/lib/sequence-diagram.min.js"></script>
+        <script src="../editormd/lib/flowchart.min.js"></script>
+        <script src="../editormd/lib/jquery.flowchart.min.js"></script>
+        <script src="../editormd/editormd.js"></script>
         <script type="text/javascript">
 			sub_url			= location.href.split("?");
 			tokens			= sub_url[1].split("/");
@@ -50,6 +46,7 @@
                         flowChart       : true,
                         sequenceDiagram : true,
 						searchReplace   : true,
+						path			: "../editormd/lib/"
                     });
                 });
             });
