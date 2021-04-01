@@ -51,6 +51,7 @@
 			scala         : ["Scala", "clike"],
 			swift         : ["Swift", "clike"],
 			vb            : ["VB/VBScript", "vb"],
+			verilog       : ["Verilog", "verilog"],
 			xml           : ["XML", "text/xml"],
 			yaml          : ["YAML", "yaml"]
 		};

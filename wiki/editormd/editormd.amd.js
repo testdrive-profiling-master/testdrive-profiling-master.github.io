@@ -56,6 +56,7 @@
                 cmModePath + "vb/vb",
                 cmModePath + "vbscript/vbscript",
                 cmModePath + "velocity/velocity",
+				cmModePath + "verilog/verilog",
                 cmModePath + "xquery/xquery",
                 cmModePath + "yaml/yaml",
                 cmModePath + "erlang/erlang",
