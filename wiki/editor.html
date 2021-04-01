@@ -7,6 +7,11 @@
 		<textarea style="display:none;"></textarea>
 	</div>
 	<script src="editormd/js/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="editormd/lib/codemirror/codemirror.min.css" />
+	<script src="editormd/lib/codemirror/codemirror.min.js"></script>
+	<script src="editormd/lib/codemirror/addons.min.js"></script>
+	<script src="editormd/lib/codemirror/modes.min.js"></script>
 	<script src="editormd/lib/marked.min.js"></script>
 	<script src="editormd/lib/prettify.min.js"></script>
 	<script src="editormd/lib/raphael.min.js"></script>
@@ -26,6 +31,7 @@
 				tex             : true,
 				flowChart       : true,
 				sequenceDiagram : true,
+				searchReplace   : true,
 				path			: "editormd/lib/"
 			});
 		});
