@@ -1,11 +1,12 @@
 # Wiki Page
 
+* ### [Installation](?Installation.md)
 * ### Without TestDrive
 	* #### C/C++ project
 	* #### Verilog project
 * ### With TestDrive
 	* ### Documents
-		* #### [System Manager](index.html?SystemManager.md)
+		* #### [System Manager](?SystemManager.md)
 		* #### System Map
 		* #### Xilinx Synthesis
 		* #### Scenario Test

@@ -321,3 +321,5 @@ GtkWave 에서 수정 후 저장될 수 있으며, %PROJECT%Program/ 위치에�
 이 속성은 "1. 하위 시스템" 이 'Simulation' 일 경우만 활성화 된다.
 파형 기록이 활성화 될 ㎲ 단위의 시작 시간을 지정한다.
 (GtkWave 에서 보이는 시간 단위는 ns 단위임을 유의한다.)
+
+[:fa-arrow-left: Back](?top.md)
