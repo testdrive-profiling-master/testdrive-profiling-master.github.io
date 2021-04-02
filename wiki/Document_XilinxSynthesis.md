@@ -224,7 +224,7 @@ FPGA 상의 제한된 DSPs 수 이상을 사용하게 되면,
 [타이밍 설명]
  
 >테이블에서 나타내는 '동작속도', 'Setup/Hold 시간', '조합 딜레이' 는 위의 그림과 비교해 다음과 같이 설명됩니다.
-'동작속도' = 1초 / (F/F 간의 사이의 최대 시간) , (발현조건 : Input port 에서 Output port 사이에 적어도 연결된 F/F 가 2단 이상 존재하여야 한다.)
+'동작속도' = $${1초} {F/F 간의 사이의 최대 시간}$$ , (발현조건 : Input port 에서 Output port 사이에 적어도 연결된 F/F 가 2단 이상 존재하여야 한다.)
 'Setup 시간' = Input port 에서 처음 F/F 까지 걸리는 시간. (발현조건 : Input port 에서 Output port 사이에 적어도 연결된 F/F 가 1단 이상 존재하여야 한다.)
 'Hold 시간' = 마지막 F/F 에서 Output port 까지 걸리는 시간. (발현조건 : Input port 에서 Output port 사이에 적어도 연결된 F/F 가 1단 이상 존재하여야 한다.)
 '조합 딜레이' = Input port 에서 Output port 까지 F/F 를 통과하지 않는 회로의 최대 걸리는 시간. (발현조건 : Input port 에서 Output port 사이에 F/F 가 존재하지 않는 경로가 존재하여야 한다.)
@@ -236,7 +236,7 @@ FPGA 상의 제한된 DSPs 수 이상을 사용하게 되면,
 
 ## 3. 좋은 디자인 설계를 위해...
 
-위 테이블의 MAD.v 는 Multiply & Adder 연산을 하는 매우 간단한 연산이며,  아래처럼 클럭을 사용하지 않고 32비트의 A * B + C 연산을 수행하는 디자인입니다.
+위 테이블의 MAD.v 는 Multiply & Adder 연산을 하는 매우 간단한 연산이며,  아래처럼 클럭을 사용하지 않고 32비트의 $$A * B + C$$ 연산을 수행하는 디자인입니다.
 
 `(MAD.v)`
 ```verilog
