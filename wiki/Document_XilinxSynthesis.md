@@ -14,7 +14,7 @@ Xilinx 의 Vivado 가 설치 되어야 합니다.(ISE 는 더이상 지원하지
 여기서는 Xilinx 에 대한 라이센스 획득에 대해서는 별도로 설명하지 않습니다.
 (참조 : VIVADO 다운로드 주소)
 
-%PROJECT%Profiles/Config.ini 파일의 설정부터 시작한다.
+`%PROJECT%Profiles/Config.ini` 파일의 설정부터 시작한다.
 
 [Xilinx Synthesis]
 PROJECT_PATH = %PROJECT%System\HDL\DUTs
@@ -27,7 +27,7 @@ PROJECT_PATH = %PROJECT%System\HDL\DUTs
 추가하지 않습니다. (Meitner 의 %PROJECT%System/HDL/DUTs/top_template)
 검색되는 확장자는 VHDL(.vhd), verilog(.v) 와 system verilog(.sv) 만 해당되며,
 개별 파일이 검색되지 않기 위해서는 entity(VHDL), module(verilog/system verilog) 선언 이전에
-/* HIDDEN */ 와 같이 주석을 삽입하면 검색이 되지 않습니다.
+`/* HIDDEN */` 와 같이 주석을 삽입하면 검색이 되지 않습니다.
 
 .XilinxSynthesis.sources 추가할 수 있는 소스는 .v, .xdc(vivado only) 를 사용할 수 있으며, * (wildcard) 문자를 사용하여
 여러 소스를 한번에 추가할 수 있습니다. include path 는 %PROJECT%System\HDL 가 기본적으로 포함되어 있으며,
@@ -37,7 +37,7 @@ PROJECT_PATH = %PROJECT%System\HDL\DUTs
 프로젝트 디렉토리까지 해당하는 단계별 하위 폴더로 내려가 순서대로 찾아 소스를 적용시킵니다.
 
 검색 예시) %PROJECT%System\HDL\DUTs\A\B\C\top.v 를 빌드할 경우 아래 순서대로 찾습니다.
-                 (프로젝트 폴더 : '%PROJECT%System\HDL\DUTs' 지정)
+(프로젝트 폴더 : `%PROJECT%System\HDL\DUTs` 지정)
           1. %PROJECT%System\HDL\DUTs\A\B\C\.XilinxSynthesis.sources
           2. %PROJECT%System\HDL\DUTs\A\B\.XilinxSynthesis.sources
           3. %PROJECT%System\HDL\DUTs\A\.XilinxSynthesis.sources
@@ -48,18 +48,17 @@ PROJECT_PATH = %PROJECT%System\HDL\DUTs
 // 포함경로 추가 (경로는 프로젝트의 경로로 부터 상대주소입니다.)
 @processor_axi_wrapper
 // 소스 추가 (경로는 프로젝트의 경로로 부터 상대주소입니다.)
-../library/*.v
-processor_axi_wrapper/*.v
-// TCL 명령어 추가
-#set_property verilog_define TEST_DESIGN [current_fileset]
+`../library/*.v`
+`processor_axi_wrapper/*.v`
 
+// TCL 명령어 추가
+`#set_property verilog_define TEST_DESIGN [current_fileset]`
+
+## 1. 속성 뷰
 
 속성 뷰에서는 아래와 같이 나열되어 있으며, 각 속성에 대한 설명은 다음과 같습니다.
 
-
- 
-
-1. 자일링스 설치 경로
+### 1) 자일링스 설치 경로
 
 도큐먼트 실행시 각 드라이브에서 "Xilinx" 폴더 존재 여부를 검색하여,
 자일링스 설치 경로를 지정합니다.
@@ -68,12 +67,12 @@ processor_axi_wrapper/*.v
 
 설치된 자일링스(Vivado 2015.4) 경로를 찾았습니다. (경로 : D:\Xilinx\Vivado\2015.4\)
 
-2. 프로젝트 경로
+### 2) 프로젝트 경로
 
 %PROJECT%Profiles/Config.ini 에 지정된 "Xilinx Synthesis" 섹션에서 얻은 경로를
 기본 경로로 지정합니다. 직접 변경이 가능합니다.
 
-3. 페밀리
+### 3) 페밀리
 
 자일링스 디바이스 페밀리를 지정합니다.
 리스트에 대부분 추가하였지만, 사용자가 직접 입력 가능합니다.
@@ -83,43 +82,43 @@ processor_axi_wrapper/*.v
 직접 입력하여야 합니다.
 (존재하지 않는 디바이스가 있다면, 알려주시기 바랍니다.)
 
-4. 디바이스
+### 4) 디바이스
 
 자일링스 디바이스 이름을 지정합니다.
 
-5. 패키지
+### 5) 패키지
 
 자일링스 디바이스에 해당하는 패키지 종류를 지정합니다.
 
-6. 스피드
+### 6) 스피드
 
 자일링스 디바이스의 동작 스피드 레이트를 지정합니다.
 
-7. 목표 속도 (MHz)
+### 7) 목표 속도 (MHz)
 
 합성의 목표 속도(MHz) 를 지정합니다.
 타겟 클럭 Constraint 를 주는데 사용됩니다.
 
-8. 클럭 신호
+### 8) 클럭 신호
 
 목표 속도를 지정할 클럭 신호를 나열합니다.
 
-9. 리셋 신호
+### 9) 리셋 신호
 
 리셋 신호를 지정합니다.
 지정한 리셋 신호는 TIG(Timing Ignore) 속성의 constraint 를 가집니다.
  
-10. 최대 경로 수
+### 10) 최대 경로 수
 
 합성 리포트에 나열할 Critical path 의 최대 경로 개수를 지정합니다.
 1~100 의 범위를 가질 수 있습니다..
 
-[테이블 설명]
+## 2. 테이블 설명
 
  
 테이블에 표시되는 각각의 의미는 다음과 같습니다.
 
-1. 합성 대상
+#### 1) 합성 대상
 
 합성 대상이 되는 폴더(회색 음역)나 대상 verilog 파일 이름을 나타냅니다.
 대상 파일을 클릭하면 해당 파일의 합성이 진행됩니다.
@@ -129,26 +128,23 @@ processor_axi_wrapper/*.v
 합성 대상 폴더 앞의 "폴더 아이콘" 해당 폴더를 바로 열람 가능하게 하며 나머지 아이콘들을
 클릭하면 아래와 같은 기능을 수행합니다.
 
-  : 현재 결과를 기준 값으로 지정하기.
+* 현재 결과를 기준 값으로 지정하기.
 	현재 합성 결과를 기준 값으로 저장합니다.
 	이 기준값은 소스 변경 후 다시 합성할 때 비교 대상이 되어,
 	차이가 있을 경우 얼마나 개선이 되었는지 상대적 수치로 표시됩니다.
 
-  : 소스 보기
+* 소스 보기
 	해당 verilog 소스를 직접 수정 할 수 있도록 열람합니다.
 
-  : 자일링스 리포트 상세 보기
+* 자일링스 리포트 상세 보기
 	합성이 되었을 때 한눈에 볼 수 있도록 요약하여 보여주지만,
 	자일링스가 제공하는 대상 파일의 보다 상세한 정보를 아래와 같이 열람하도록 합니다.
 
 
- 
-
-
-	자일링스 합성은 지정된 프로젝트 폴더에 ".XilinxSynthesis.work" 이름의 폴더를 생성 후 합성이 진행됩니다.
+>자일링스 합성은 지정된 프로젝트 폴더에 ".XilinxSynthesis.work" 이름의 폴더를 생성 후 합성이 진행됩니다.
 	이 폴더를 지울 경우 자일링스 리포트를 볼 수 없게 됩니다.
 
-2. 동작속도
+#### 2) 동작속도
 
 현재 파일의 최대 동작 주파수를 계산합니다.
 클럭 동기가 있을 경우 정상적인 MHz 표시를 하지만,
@@ -165,7 +161,7 @@ processor_axi_wrapper/*.v
 
 클럭(MHz) = 1000 / (clock_required_latency - slack_latency)
 
-3. Setup/Hold 시간
+#### 3) Setup/Hold 시간
 
 클럭과 동기되는 F/F 간의 걸리는 동작 시간 이외에
 다자인 상의 입력 포트와 처음 만나는 F/F 까지 걸리는 시간과, 
@@ -178,7 +174,7 @@ processor_axi_wrapper/*.v
 뜻으로 점점 붉게 표시되며, 100을 넘어서면 어떠한 디자인에 붙더라도
 "2. 동작속도" 수치로 동작 불가능하게 되므로 잘못된 디자인 설계가 됩니다.
 
-4. 조합 딜레이
+#### 4) 조합 딜레이
 
 클럭과 동기되지 않는 입력과 출력간의 조합 회로 (Combinational logic) 의
 동작에 필요한 시간이 됩니다. 이 값도 "2. 동작속도"가 존재할 경우
@@ -186,17 +182,17 @@ processor_axi_wrapper/*.v
 항상 100보다 낮은 수치가 되도록 유지되어야 표시된 동작속도를
 만족할 수 있는 디자인이 됩니다.
 
-5. Registers
+#### 5) Registers
 
 지정한 FPGA 에서 사용한 F/F 라인 개수를 나타냅니다.
 총 사용량을 전체 개수 대비 % 비율로 같이 표시됩니다.
 
-6. LUTs
+#### 6) LUTs
 
 FSM 이나 조합 로직의 경우 LUT 를 소모하게 됩니다.
 총 사용량을 전체 개수 대비 % 비율로 같이 표시됩니다.
 
-7. BRAMs
+#### 7) BRAMs
 
 SRAM 의 설계가 들어있을 때, Block RAM을 소모하게 됩니다. 
 FPGA 상의 BRAMs 의 개수는 매우 제한되어 있으므로
@@ -211,13 +207,13 @@ BRAMs 의 최대 사용량을 넘어설 경우 LUT 또는 Register 메모리를
 이때에서는 Synthesis 옵션을 변경하거나 설계한 SRAM 디자인을 변경할
 필요가 있습니다.
 
-가능한 %PROJECT%System/HDL/library/ 에 포함되어 있는
-SRAM_*.v 디자인을 참고하여 사용하기를 추천합니다.
+가능한 `%PROJECT%System/HDL/library/` 에 포함되어 있는
+`SRAM_*.v` 디자인을 참고하여 사용하기를 추천합니다.
 
 총 사용량을 전체 개수 대비 % 비율로 같이 표시됩니다.
 
 
-8. DSPs
+#### 8) DSPs
 
 설계에 곱셈과 같은 연산기를 사용할 때 DSPs 를 소모모하게 됩니다.
 FPGA 상의 제한된 DSPs 수 이상을 사용하게 되면,
@@ -227,7 +223,7 @@ FPGA 상의 제한된 DSPs 수 이상을 사용하게 되면,
 
 [타이밍 설명]
  
-테이블에서 나타내는 '동작속도', 'Setup/Hold 시간', '조합 딜레이' 는 위의 그림과 비교해 다음과 같이 설명됩니다.
+>테이블에서 나타내는 '동작속도', 'Setup/Hold 시간', '조합 딜레이' 는 위의 그림과 비교해 다음과 같이 설명됩니다.
 '동작속도' = 1초 / (F/F 간의 사이의 최대 시간) , (발현조건 : Input port 에서 Output port 사이에 적어도 연결된 F/F 가 2단 이상 존재하여야 한다.)
 'Setup 시간' = Input port 에서 처음 F/F 까지 걸리는 시간. (발현조건 : Input port 에서 Output port 사이에 적어도 연결된 F/F 가 1단 이상 존재하여야 한다.)
 'Hold 시간' = 마지막 F/F 에서 Output port 까지 걸리는 시간. (발현조건 : Input port 에서 Output port 사이에 적어도 연결된 F/F 가 1단 이상 존재하여야 한다.)
@@ -238,30 +234,25 @@ FPGA 상의 제한된 DSPs 수 이상을 사용하게 되면,
 특히 '조합 딜레이는' 다른 모듈과 연결할 때, 해당 모듈의 'Setup/Hold 시간' 에 악영향을 미치므로 가능한 없어야 합니다.
 
 
-[좋은 디자인 설계를 위해...]
-
-
- 
-
-
+## 3. 좋은 디자인 설계를 위해...
 
 위 테이블의 MAD.v 는 Multiply & Adder 연산을 하는 매우 간단한 연산이며,  아래처럼 클럭을 사용하지 않고 32비트의 A * B + C 연산을 수행하는 디자인입니다.
 
-(MAD.v)
+`(MAD.v)`
+```verilog
 module MAD (
-	input	[31:0]			A,		// A
-	input	[31:0]			B,		// B
-	input	[31:0]			C,		// C
-	output	[31:0]			O		// output
+	input   [31:0]    A,   // A
+	input   [31:0]    B,   // B
+	input   [31:0]    C,   // C
+	output  [31:0]    O    // output
 );
 
 // definition & assignment ---------------------------------------------------
-
 // implementation ------------------------------------------------------------
 assign	O	= (A * B) + C;
 
 endmodule
-
+```
 위의 디자인의 속도는 조합딜레이에 의해 최대 145MHz 까지 동작 가능함을 추정할 수 있습니다.
 여기서 이보다 더 높은 성능을 올리기 위해 일반적으로 행하는 방법은 보다 작은 연산으로 쪼개어 pipeline 을 늘려
 성능을 높이는 것이 일반적입니다.
