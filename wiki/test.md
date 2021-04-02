@@ -280,6 +280,7 @@ X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;
 ### 科学公式 TeX(KaTeX)
 
 $$E=mc^2$$
+$$A * B + C$$
 
 行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。
 
