@@ -1,4 +1,4 @@
-# TestDrive Profiling Master Wiki
+# :fa-file-text-o: TestDrive Profiling Master Wiki
 
 * #### [Installation](?Installation.md)
 * #### Tutorials
