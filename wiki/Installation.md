@@ -1,5 +1,7 @@
 # Installation
 
+It can be installed only in **Windows 7** or higher 64bit environment.
+
 ### 1. Install from repositories.
 First, install [git](https://git-scm.com/downloads)([tortoisegit](https://tortoisegit.org/download/) optional) and enter the following through the command window in the appropriate folder.
 
