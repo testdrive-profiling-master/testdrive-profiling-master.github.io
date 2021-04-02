@@ -1,6 +1,6 @@
 # Installation
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/A_zuHvBlvkA" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hWhtecGd4l4" frameborder="0" allowfullscreen></iframe>
 
 It can be installed only in **Windows 7** or higher 64bit environment.
 
