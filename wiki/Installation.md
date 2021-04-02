@@ -1,5 +1,7 @@
 # Installation
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A_zuHvBlvkA" frameborder="0" allowfullscreen></iframe>
+
 It can be installed only in **Windows 7** or higher 64bit environment.
 
 ### 1. Install from repositories.
@@ -10,7 +12,7 @@ git clone https://github.com/testdrive-profiling-master/release TestDrive
 git clone https://github.com/testdrive-profiling-master/profiles Profiles
 ```
 
-### 2. First register program
+### 2. Program environment registration
 Enter as below to check if the program works normally.
 During this process, environment variables are registered, and a reboot may be required.
 
