@@ -1,11 +1,11 @@
-# Xilinx Synthesis (Document)
+# Document Profile : Xilinx Synthesis
 
 | | |
-| :------------: | ------------ |
+| ------------: | ------------ |
 | **Name**  | Xilinx Synthesis / Xilinx Síntesis / 자일링스 합성 / ザイリンクス合成 |
 | **Path**  | %TESTDRIVE_PROFILE%/Common/XilinxSynthesis  |
 | **Language**  | English / español / 한국어 / 日本語  |
-| **Profile View** | System/Analysis/Xilinx Synthesis  |
+| **Profile View** | System :fa-angle-right: Analysis :fa-angle-right: Xilinx Synthesis  |
 
 HDL 을 FPGA 용으로 빌드하고 동작속도, Setup/Hold 시간, 조합 딜레이, Registers / LUTs / BRAMs 사용량을 측정하고,
 이전에 빌드한 결과를 파일별로 비교할 수 있습니다.

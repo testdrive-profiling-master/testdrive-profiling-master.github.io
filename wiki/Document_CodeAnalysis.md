@@ -1,11 +1,11 @@
-# Code Analysis (Document)
+# Document Profile : Code Analysis
 
 | | |
-| :------------: | ------------ |
+| ------------: | ------------ |
 | **Name**  | Code Analysis / Análisis de código / 코드 분석 / コード分析 |
 | **Path**  | %TESTDRIVE_PROFILE%/Common/CodeAnalysis  |
 | **Language**  | English / español / 한국어 / 日本語  |
-| **Profile View** | System > Analysis > Code Analysis  |
+| **Profile View** | System :fa-angle-right: Analysis :fa-angle-right: Code Analysis  |
 
 
 

@@ -1,11 +1,11 @@
-# Virtual Display (Document)
+# Document Profile : Virtual Display
 
 | | |
-| :------------: | ------------ |
+| ------------: | ------------ |
 | **Name**  | Display / Monitor / 디스플레이 / ディスプレー |
 | **Path**  | %TESTDRIVE_PROFILE%/Common/VirtualDisplay  |
 | **Language**  | English / español / 한국어 / 日本語  |
-| **Profile View** | System/Display  |
+| **Profile View** | System :fa-angle-right: Display  |
  
 
 가상의 디스플레이 도큐먼트를 S/W 응용프로그램과 H/W 응용 프로그램에 접근할 수 있도록 한다.

@@ -1,11 +1,11 @@
-# Scenario Test (Document)
+# Document Profile : Scenario Test
 
 | | |
-| :------------: | ------------ |
+| ------------: | ------------ |
 | **Name**  | Scenario Test / Prueba de escenario / 시나리오 테스트 / シナリオテスト |
 | **Path**  | %TESTDRIVE_PROFILE%/Common/ScenarioTest  |
 | **Language**  | English / español / 한국어 / 日本語  |
-| **Profile View** | System/Analysis/Scenario Test  |
+| **Profile View** | System :fa-angle-right: Analysis :fa-angle-right: Scenario Test  |
  
 
 시나리오 테스트는 프로그램을 실행하는 테스트 테스크를 점수화하여 관리하는 동적 스코어 보드입니다.

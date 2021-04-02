@@ -1,11 +1,11 @@
-# 도큐먼트 프로파일 설명 : System map
+# Document Profile : System map
 
 | | |
-| :------------: | ------------ |
+| ------------: | ------------ |
 | **Name**  | System Map / Mapa del sistema / 시스템 맵 / システムマップ |
 | **Path**  | %TESTDRIVE_PROFILE%/Common/SystemMap  |
 | **Language**  | English / español / 한국어 / 日本語  |
-| **Profile View** | System/System map  |
+| **Profile View** | System :fa-angle-right: System map  |
 
 ![system_map](img/Document_SystemMap.jpg)
 
@@ -19,12 +19,12 @@ Microsoft 웹페이지에서 Visio viewer 64bit용 (무료버전)을 다운받�
 TestDrive 가 현재 64bit 프로그램이기 때문에 동일한 64bit 버전이 설치되어 있어야 합니다.
 32bit 용 Visio 가 설치되어 있어도 위와 같은 경고 메시지를 보시게 됩니다.
 
-예제에서 Meitner/Profiles/Config.ini 를 수정합니다.
+예제에서 `Meitner/Profiles/Config.ini` 를 수정합니다.
 ```ini
 [System Map]
 FILE = "%PROJECT%Documents\SystemMap\SystemMap.vsd"
 ```
-위는 현재 프로젝트의 Documents/SystemMap/SystemMap.vsd 파일을 참조하여 위와 같이 시스템 맵을 보여주고 있습니다.
+위는 현재 프로젝트의 `Documents/SystemMap/SystemMap.vsd` 파일을 참조하여 위와 같이 시스템 맵을 보여주고 있습니다.
  
 편집을 하려 할 때에는 언제든 오른쪽 버튼을 눌러 Visio 를 통해 가능합니다.
 
@@ -55,6 +55,6 @@ Visio 의 기본 기능인 특정한 드로우 객체를 클릭하였을 때 Hyp
     `http://execute?파일명?파라미터?실행위치`
     예) `http://execute?`
 
-> 현재 OpenOffice 나 LibreOffice 의 Draw 의 성능과 편의성이 상용 프로그램인 Visio 보다 더 좋아지기를 기다리고 있으며, 가능한 상용프로그램을 사용하지 않기 위해 Draw 가 Visio 보다 개선되는 시점에서 향후 변경될 가능성이 있습니다.
+> 현재 LibreOffice 의 Draw 의 성능이 상용 프로그램인 Visio 보다 더 좋아지기를 기다리고 있으며, 가능한 상용프로그램을 사용하지 않기 위해 Draw 가 Visio 보다 개선되는 시점에서 향후 변경될 가능성이 있습니다.
 
 ### [:fa-arrow-left: Back](?top.md)

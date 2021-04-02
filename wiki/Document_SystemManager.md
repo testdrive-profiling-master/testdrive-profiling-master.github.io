@@ -1,11 +1,11 @@
-# System Manager Document
+# Document Profile : System Manager
 
 | | |
-| :------------: | ------------ |
+| ------------: | ------------ |
 | **Name**  | System / Sistema / 시스템 / システム |
 | **Path**  | %TESTDRIVE_PROFILE%/Common/SystemManager  |
 | **Language**  | English / español / 한국어 / 日本語  |
-| **Profile View** | none.  |
+| **Profile View** | (auto started.)  |
 
 sw/hw 개발 환경, 컴파일 자동화, 코드 lint, 시뮬레이션 파형 제어, 코딩 스타일 제어 등을 관리하는 도큐먼트입니다.
 속성 뷰에서 "시스템" 프로파일

@@ -1,11 +1,11 @@
-# System Chart (Document)
+# Document Profile : System Chart
 
 | | |
-| :------------: | ------------ |
+| ------------: | ------------ |
 | **Name**  | System Chart / Gráfico del sistema / 시스템 차트 / システムチャート |
 | **Path**  | %TESTDRIVE_PROFILE%/Common/SystemChart  |
 | **Language**  | English / español / 한국어 / 日本語  |
-| **Profile View** | System/System chart  |
+| **Profile View** | System :fa-angle-right: System chart  |
 
 ![system_chart](img/Document_SystemChart.jpg)
 
@@ -108,13 +108,13 @@ Chart에 대한 인스턴스를 선언하고, 아래의 메소드들을 호출�
 
 
 `void SetForeground(void);`
-	차트 도큐먼트를 맨 앞으로 옮겨 보이게 한다.
+>차트 도큐먼트를 맨 앞으로 옮겨 보이게 한다.
 	차트 도큐먼트가 활성화 되지 않았을 경우 무시된다.
 
 
 ### 3. 예제
 
-%PROJECT%Application/Example/Testbench/ChartTest 예제를 설명한다.
+`%PROJECT%Application/Example/Testbench/ChartTest` 예제를 설명한다.
 실행은 프로파일 뷰에서 먼저 "System/System chart" 를 실행합니다.
 ```cpp
 #include "Chart.h"
