@@ -1,8 +1,6 @@
 # Installation
 
-<!--<div style="position: relative; height:0; padding-bottom: 56.25%;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hWhtecGd4l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; width:100%; height:100%;"></iframe>
-</div> -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hWhtecGd4l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 It can be installed only in **Windows 7** or higher 64bit environment.
 
