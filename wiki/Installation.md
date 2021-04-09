@@ -35,7 +35,7 @@ project.profile
 Depending on the anti-virus program, you may be asked to check the Internet connection, so if you have an anti-virus program installed, do not leave your desk and allow an Internet connection on every installation steps.
 
 ### 4. Confirmation of installation
-In order to check whether the installation was successful, please reboot and check if the command is executed normally.
+In order to check whether the installation was successful, please reboot and check if the command can be executed normally.
 `ls`
 `gcc`
 `make`
