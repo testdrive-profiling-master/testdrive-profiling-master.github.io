@@ -20,13 +20,13 @@ verilog 프로젝트는 TestDrive 상의 관리가 필요하므로 특정 폴더
 ```bash
 create_project v [Project_Name]
 ```
-또는
+Or
 *(bared Verilog project - for expert)*
 ```bash
 create_project v_bare [Project_Name]
 ```
 
-## 1. 프로젝트 선택 및 빌드
+## 2. 프로젝트 선택 및 빌드
 프로젝트 빌드는 TestDrive 를 통해서만 가능하며,
 `현재 시뮬레이션`으로 선택과 `빌드` 과정이 필요합니다.
 이를 위해서 TestDrive 를 재시작 후, 아래와 같이 선택합니다.
