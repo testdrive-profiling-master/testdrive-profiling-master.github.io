@@ -87,13 +87,13 @@ drwxr-xr-x 1 USER 없음     0 Apr 15 12:32 ..
 [실행화면] 
 ![c_project](img/project_c.jpg)
 
-> 팁 : "Project Explorer > mouse left button > index > Rebuild" 를 실행하여 초기에 index 갱신을 하는 것이 좋습니다.
+> :fa-send-o:Tip : "Project Explorer > mouse left button > index > Rebuild" 를 실행하여 초기에 index 갱신을 하는 것이 좋습니다.
 
 1) `CRTL + B` 를 눌러 빌드를 실행합니다.
 2) "Project Explorer" 에서 F5 를 눌러 "Test.exe" 가 추가됨을 확인합니다.
 3) `F11` 를 눌러 "Local C/C++ Application" 을 선택 후 Debug 모드로 스위치 한 후 디버깅 할 수 있습니다.
 
-> 디버깅 후 다시 빌드 하기 전에 프로그램이 종료 되었는지 확인 하세요.
+> :fa-send-o:Tip : 디버깅 후 다시 빌드 하기 전에 프로그램이 종료 되었는지 확인 하세요.
  프로그램이 종료되지 않은 상태에서는 빌드 결과를 덮어 쓸 수 없습니다.
 
 ## 3. 암호화 및 라이센싱 관리
