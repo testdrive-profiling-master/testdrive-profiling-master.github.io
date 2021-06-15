@@ -71,13 +71,13 @@ The variable properties specified here are as follows.
 Build command is `make`.
 
 ## 2. Debugging
-For debugging, use the eclipse IDE environment as follows, and execute `.Project.bat` in the created project.
+For debugging, use the eclipse IDE environment as follows, and execute `.eclipse` in the created project.
 ```dos
 C:\Project\Test>ls -al
 total 32
 drwxr-xr-x 1 USER None     0 Apr 15 14:41 .
 drwxr-xr-x 1 USER None     0 Apr 15 12:32 ..
--rw-r--r-- 1 USER None    53 Apr 15 12:32 .Project.bat
+-rw-r--r-- 1 USER None    53 Apr 15 12:32 .eclipse.bat
 -rw-r--r-- 1 USER None 13154 Apr 15 12:32 .cproject
 -rw-r--r-- 1 USER None    33 Apr 15 12:32 .inception
 -rw-r--r-- 1 USER None  1280 Apr 15 12:32 .project

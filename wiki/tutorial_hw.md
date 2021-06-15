@@ -6,7 +6,7 @@ C:\Project\profiles\Meitner\System\HDL\DUTs>create_project v Test
 Done.
 C:\Project\profiles\Meitner\System\HDL\DUTs>cd Test
 
-C:\Project\profiles\Meitner\System\HDL\DUTs\Test>.Project.bat
+C:\Project\profiles\Meitner\System\HDL\DUTs\Test>.eclipse
 ```
 > TestDrive 를 재시작 후 `속성 뷰`의 **"시스템/시뮬레이션 탑 디자인"** 에서 생성한 프로젝트를 선택한다.
 `프로파일 뷰` 에서 **"System/Build/Build H/W"** 를 실행하여 직접 컴파일하거나,
