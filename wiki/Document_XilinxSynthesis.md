@@ -12,7 +12,7 @@ HDL 을 FPGA 용으로 빌드하고 동작속도, Setup/Hold 시간, 조합 딜�
 
 Xilinx 의 Vivado 가 설치 되어야 합니다.(ISE 는 더이상 지원하지 않는다.)
 여기서는 Xilinx 에 대한 라이센스 획득에 대해서는 별도로 설명하지 않습니다.
-(참조 : VIVADO 다운로드 주소)
+(참조 : [Vivado 다운로드](https://www.xilinx.com/support/download.html "Vivado 다운로드"))
 
 `%PROJECT%Profiles/Config.ini` 파일의 설정부터 시작한다.
 
