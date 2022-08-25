@@ -46,7 +46,7 @@ SRCS            := \
 INC             := -I.
 LIBDIR          :=
 CDEFS           :=
-EXTRA_CFLAGS    := -O0 -std=c++11 -DDEBUG -g
+EXTRA_CFLAGS    := -O0 -std=c++17 -DDEBUG -g
 
 #-------------------------------------------------
 # common document config
@@ -65,7 +65,7 @@ The variable properties specified here are as follows.
 | INC | User defined include path list  |
 | LIBDIR | User defined library/path list |
 | CDEFS | User definition list |
-| EXTRA_CFLAGS | Extra definition list (If not specified, default EXTRA_CFLAGS is "-O3 -std=c++11".)  |
+| EXTRA_CFLAGS | Extra definition list (If not specified, default EXTRA_CFLAGS is "-O3 -std=c++17".)  |
 | BUILD_TARGET | Build result type<br>- $(TARGET_EXE) : Execution file (.exe)<br>- $(TARGET_SO) : Dynamic library (.so / .dll)<br>- $(TARGET_A) : Static library (.a)<br>- $(TARGET_SO_A) : Dynamic & Static library |
 
 Build command is `make`.
