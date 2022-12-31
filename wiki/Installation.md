@@ -8,6 +8,9 @@ It can be installed only in **Windows 7** or higher 64bit environment.
 First, install [git](https://git-scm.com/downloads)([tortoisegit](https://tortoisegit.org/download/) optional) and enter the following through the command window in the appropriate folder.
 
 ```sh
+cd /
+mkdir Project
+cd Project
 git clone https://github.com/testdrive-profiling-master/release TestDrive
 git clone https://github.com/testdrive-profiling-master/profiles Profiles
 ```
@@ -44,4 +47,6 @@ In order to check whether the installation was successful, please reboot and che
 
 :fa-thumbs-o-up: *Congratulations!*  All installations have been completed normally.
 
+### 5. Trouble shooting
+Contect to me : clonextop@gmail.com
 ### [:fa-arrow-left: Back](?top.md)

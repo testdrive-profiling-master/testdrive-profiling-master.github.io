@@ -135,28 +135,19 @@ Item[N].extension		: 검색할 파일 확장자, 여러 파일 확장자를 지�
 Item[N].inception		: 코드 인셉션(코드 첫 부분에 자동으로 삽입되는 문구) (사용하지 않을 시 비운다.)
 					  예제의 %PROJECT%Profiles\code_inception.txt 을 보면 다음과 같이 구성되어 있다.
 
-
 					  //=======================================================================__CHECK__
 					  //__CHECK__ CloneX developments. Copyright 2013~__YEAR__. ALL RIGHTS RESERVED
 					  //__CHECK__ Title : __TITLE__
 					  //__CHECK__ Rev.  : __DATE__ (__AUTHOR__)
 					  //=======================================================================__CHECK__
 
-
-
 					  __CHECK__	: 실제 사
-
 					  __TITLE__	: Item[N].title 에 지정한 이름으로 대체 기록된다.
-
 					  __YEAR__	: 현재 연도로 대체 기록된다.
 					  __DATE__	: 현재 날짜로 대체 기록된다.
-
 					  __TIME__	: 현재 시간이 대체 기록된다.
-
 					  __AUTHOR__	: '시스템' 속성 뷰의 개발자 서명으로 대체 기록된다.
-
 					  __VERSION__	: 현재 버전으로 대체 기록된다. (지정 안됨.)
-
 
 					  code inception 은 프로젝트의 상위 폴더에 ".inception" 파일의 아래와 같은 기술에 의해 대체된다.
 
@@ -311,6 +302,9 @@ Interactive	: 웨이브 파형을 실시간으로 관찰한다.
 
 ## 12. DO 파일명
 
+DO 파일은 시뮬레이션 파형 동작시 GtkWave 에 초기에 자동으로 추가될 신호들을 지정한다.
+간단하게 GtkWave 프로그램에서 수동으로 신호를 추가하고 'CTRL+S' 를 눌러 DO 파일로 저장 후,
+다음 시뮬레이션 재시작시 자동으로 이 DO 파일을 참조하여 신호들을 복구시킨다.
 이 속성은 "1. 하위 시스템" 이 'Simulation' 일 경우만 활성화 된다.
 "10. 웨이브 출력" 에서 'Interactive' 로 설정 하여 실행하거나,
 또는 프로파일 뷰에서 "System/View wave-form" 을 실행할 경우
@@ -322,6 +316,6 @@ GtkWave 에서 수정 후 저장될 수 있으며, %PROJECT%Program/ 위치에�
 
 이 속성은 "1. 하위 시스템" 이 'Simulation' 일 경우만 활성화 된다.
 파형 기록이 활성화 될 ㎲ 단위의 시작 시간을 지정한다.
-(GtkWave 에서 보이는 시간 단위는 ns 단위임을 유의한다.)
+##### (GtkWave 에서 보이는 시간 단위는 ns 단위임을 유의한다.)
 ---
 ### [:fa-arrow-left: Back](?top.md)
