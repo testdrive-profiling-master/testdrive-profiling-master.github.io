@@ -7,6 +7,7 @@ It can be installed only in **Windows 7** or higher 64bit environment.
 ## 1. Easy way
 Download and Run below link.
 > [TestDrive Profiling Master Installer](download/TestDrive_Profiling_Master.exe)
+>( It is recommended to install [git](https://git-scm.com/downloads) and [tortoisegit](https://tortoisegit.org/download/) separately. )
  
 
 ## 2. Hard way, but more details
