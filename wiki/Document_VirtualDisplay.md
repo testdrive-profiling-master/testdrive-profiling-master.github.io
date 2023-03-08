@@ -57,27 +57,27 @@ Meitner 예제에서는 "Meitner_Display" 메모리 모델이 해당한다.
 `%TESTDRIVE_PROFILE%Common/include/VirtualDisplayConfig.h`
 ```cpp
 typedef struct{
-	DWORD			dwAddress;		// Offset address
-	volatile BOOL		bUpdate;			// Update screen
+	DWORD           dwAddress;          // Offset address
+	volatile BOOL   bUpdate;            // Update screen
 }DisplayBuffer;
 
 typedef struct{
-	const DWORD		dwMemorySize;		// Allocated memory byte size (do not fix it.)
-	HWND			hWndHandle;		// Virtual Display document window handle (64bit is not support.)
-	int				iWidth;			// width
-	int				iHeight;			// height
-	DISPLAY_FORMAT	ColorFormat;		// color format
-	DWORD			dwByteStride;		// width byte stride
-	BOOL			bReverse;			// reverse screen
-	BOOL			bShowFrontBuffer;	// Front(TRUE)/Back(FALSE) buffer's status (do not fix it.)
-	BOOL			bFramePause;		// stop frame buffer change
-	BOOL			bMovieSave;		// Saving to movie file...
+	const DWORD     dwMemorySize;       // Allocated memory byte size (do not fix it.)
+	HWND            hWndHandle;         // Virtual Display document window handle (64bit is not support.)
+	int             iWidth;             // width
+	int             iHeight;            // height
+	DISPLAY_FORMAT  ColorFormat;        // color format
+	DWORD           dwByteStride;       // width byte stride
+	BOOL            bReverse;           // reverse screen
+	BOOL            bShowFrontBuffer;   // Front(TRUE)/Back(FALSE) buffer's status (do not fix it.)
+	BOOL            bFramePause;        // stop frame buffer change
+	BOOL            bMovieSave;         // Saving to movie file...
 
-	DisplayBuffer	Front;				// Front buffer
-	DisplayBuffer	Back;				// Back buffer
+	DisplayBuffer   Front;              // Front buffer
+	DisplayBuffer   Back;               // Back buffer
 
 #ifdef TESTDRIVE_DOCUMENT
-	DisplayDecoder	decoder;				// virtual screen decoding override function pointer (Use TestDrive document implementation only.)
+	DisplayDecoder  decoder;            // virtual screen decoding override function pointer (Use TestDrive document implementation only.)
 #endif
 }DisplayConfig;
 ```
