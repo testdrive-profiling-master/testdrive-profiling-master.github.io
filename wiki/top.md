@@ -14,9 +14,9 @@
 		* [Virtual Display](?Document_VirtualDisplay.md)
 		* [System Chart](?Document_SystemChart.md)
 * #### Utils
-	* [GPASM](?util_GPASM.md)
-	* [docgen](../download/docgen_userguide.pdf)
-	* [verigen](../download/verigen_userguide.pdf)
+	* codegen : Documentation coming soon...
+	* [docgen](../download/docgen_userguide.pdf) : document generator (.docx, .pdf)
+	* [verigen](../download/verigen_userguide.pdf) : verilog generator (codegen(Lua) is integrated to verilog)
 * #### Links
 	* github : https://github.com/testdrive-profiling-master
 	* home : https://testdrive-profiling-master.github.io/
