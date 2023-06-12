@@ -15,6 +15,8 @@
 		* [System Chart](?Document_SystemChart.md)
 * #### Utils
 	* [GPASM](?util_GPASM.md)
+	* [docgen](../download/docgen_userguide.pdf)
+	* [verigen](../download/verigen_userguide.pdf)
 * #### Links
 	* github : https://github.com/testdrive-profiling-master
 	* home : https://testdrive-profiling-master.github.io/
