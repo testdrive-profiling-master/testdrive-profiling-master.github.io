@@ -15,7 +15,7 @@
 		* [System Chart](?Document_SystemChart.md)
 * #### Utils
 	* codegen : Documentation coming soon...
-	* [docgen](../download/docgen_userguide.pdf) : document generator (.docx, .pdf)
+	* [docgen (korean only yet!)](../download/docgen_userguide.pdf) : document generator (.docx, .pdf)
 	* [verigen](../download/verigen_userguide.pdf) : verilog generator (codegen(Lua) is integrated to verilog)
 * #### Links
 	* github : https://github.com/testdrive-profiling-master
