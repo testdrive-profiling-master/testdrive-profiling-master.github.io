@@ -139,11 +139,11 @@ PROJECT_PATH = %PROJECT%System\HDL\DUTs
 이 때 combinational delay time 이 존재할 경우 다른 IP 와 연결시 새로운 setup/hold time 이 될 수 있으며, setup/hold time 이 요구하는 동작속도를 넘어설 경우에는 측정된 Slack time 이 다른 IP 와 연결시 증가된 새로운 Slack time 이 생성되어 동작속도를 낮추는 원인이 됩니다. 때문에 가능한 낮은 Setup/Hold time 과 가능한 Combinational path 를 제거한 디자인을 갖추는 것이 좋은 디자인이라 할 수 있습니다.
 Slack time 은 요구되는 클럭의 딜레이 시간에 대한 상대적 여유 시간이므로, 최대 동작 속도를 다음과 같이 계산할 수 있습니다.
 
-**$$ estimated maximum operation speed(Hz) = 1s / (requirement delay - slack time) $$**
+**$$ estimated_maximum_operation_speed(\hertz) = \frac{1sec}{(requirement_delay - slack_time)} $$**
 
 다만 multicycle path('N') 의 경우 requirement delay 가 N 배수만큼 증가 되어 반영됩니다. 때문에 이경우는 다음과 같이 동작속도가 결정됩니다.
 
-**$$ estimated maximum operation speed(Hz) = (1s / (requirement delay - slack time)) * Multicycle count $$**
+**$$ estimated_maximum_operation_speed(\hertz) = \frac{1sec}{(requirement_delay - slack_time)}  * Multicycle_count $$**
 
 ## 3. 테이블 설명
 
