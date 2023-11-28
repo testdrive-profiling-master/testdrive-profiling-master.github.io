@@ -125,7 +125,25 @@ PROJECT_PATH = %PROJECT%System\HDL\DUTs
 ![HW_Timming](img/hw_timmings.jpg)
 
 결과 테이블의 내용 이해를 돕기, 위해 먼저 H/W 타이밍에 대하여 간략하게 설명합니다.
+보통 하나의 IP 에 아래와 같은 타이밍을 도출할 수 있습니다.
 
+* **Combinational delay time**
+> 입력 pin 에서 출력 pin 까지 별도의 클럭에 의해 레지스터에 저장되지 않고, wired logic gate 들만으로 일렬로 연결된 경로의 최대 소요 시간을 말합니다. 
+* **Input setup time**
+> 입력에서 pin 에서 clock 에 의해 최초 레지스터에 저장되기까지의 최대 소요 시간을 말합니다.
+* **Output hold time**
+> clock 에 의해 저장된 레지스터에서 출력 pin 까지의 최대 소요 시간을 말합니다.
+* **Slack time**
+> 인접한 레지스터 간에 걸린 시간을 요구시간(Requirement delay : 1/clock 동작속도)에 뺀 나머지 시간을 말합니다. 이 값이 음수라면 clock 동작 시간보다 오래 걸린다는 의미이기 때문에, 요구하는 동작속도를 정상적으로 맞추지 못할 수 있습니다.
+
+이 때 combinational delay time 이 존재할 경우 다른 IP 와 연결시 새로운 setup/hold time 이 될 수 있으며, setup/hold time 이 요구하는 동작속도를 넘어설 경우에는 측정된 Slack time 이 다른 IP 와 연결시 증가된 새로운 Slack time 이 생성되어 동작속도를 낮추는 원인이 됩니다. 때문에 가능한 낮은 Setup/Hold time 과 가능한 Combinational path 를 제거한 디자인을 갖추는 것이 좋은 디자인이라 할 수 있습니다.
+Slack time 은 요구되는 클럭의 딜레이 시간에 대한 상대적 여유 시간이므로, 최대 동작 속도를 다음과 같이 계산할 수 있습니다.
+
+**$$ estimated maximum operation speed(Hz) = 1s / (requirement delay - slack time) $$**
+
+다만 multicycle path('N') 의 경우 requirement delay 가 N 배수만큼 증가 되어 반영됩니다. 때문에 이경우는 다음과 같이 동작속도가 결정됩니다.
+
+**$$ estimated maximum operation speed(Hz) = (1s / (requirement delay - slack time)) * Multicycle count $$**
 
 ## 3. 테이블 설명
 
