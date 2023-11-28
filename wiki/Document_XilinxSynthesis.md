@@ -7,11 +7,13 @@
 | **Language**  | English / español / 한국어 / 日本語  |
 | **Profile View** | System :fa-angle-right: Analysis :fa-angle-right: Xilinx Synthesis  |
 
+![Xilinx_Synthesis](img/Document_XilinxSynthesis.jpg)
+
 HDL 을 FPGA 용으로 빌드하고 동작속도, Setup/Hold 시간, 조합 딜레이, Registers / LUTs / BRAMs 사용량을 측정하고,
 이전에 빌드한 결과를 파일별로 비교할 수 있습니다.
 
-Xilinx 의 Vivado 가 설치 되어야 합니다.(ISE 는 더이상 지원하지 않는다.)
-여기서는 Xilinx 에 대한 라이센스 획득에 대해서는 별도로 설명하지 않습니다.
+Xilinx 의 Vivado 가 설치 되어야 합니다. (ISE 는 더이상 지원하지 않습니다.)
+여기에서 Xilinx 라이센스 획득에 대해서는 별도로 언급하지 않습니다.
 (참조 : [Vivado 다운로드](https://www.xilinx.com/support/download.html "Vivado 다운로드"))
 
 `%PROJECT%Profiles/Config.ini` 파일의 설정부터 시작한다.
@@ -27,7 +29,7 @@ PROJECT_PATH = %PROJECT%System\HDL\DUTs
 추가하지 않습니다. (Meitner 의 %PROJECT%System/HDL/DUTs/top_template)
 검색되는 확장자는 VHDL(.vhd), verilog(.v) 와 system verilog(.sv) 만 해당되며,
 개별 파일이 검색되지 않기 위해서는 entity(VHDL), module(verilog/system verilog) 선언 이전에
-`/* HIDDEN */` 와 같이 주석을 삽입하면 검색이 되지 않습니다.
+`/* HIDDEN */` 와 같이 주석이 삽입되면 검색이 되지 않습니다.
 
 .XilinxSynthesis.sources 추가할 수 있는 소스는 .v, .xdc(vivado only) 를 사용할 수 있으며, * (wildcard) 문자를 사용하여
 여러 소스를 한번에 추가할 수 있습니다. include path 는 %PROJECT%System\HDL 가 기본적으로 포함되어 있으며,
@@ -58,7 +60,11 @@ PROJECT_PATH = %PROJECT%System\HDL\DUTs
 
 속성 뷰에서는 아래와 같이 나열되어 있으며, 각 속성에 대한 설명은 다음과 같습니다.
 
-### 1) 자일링스 설치 경로
+### 1) 경로 필터
+
+검색된 H/W 소스들을 지정한 경로에 제한하여 보일 수 있습니다.
+
+### 2) 자일링스 설치 경로
 
 도큐먼트 실행시 각 드라이브에서 "Xilinx" 폴더 존재 여부를 검색하여,
 자일링스 설치 경로를 지정합니다.
@@ -67,12 +73,12 @@ PROJECT_PATH = %PROJECT%System\HDL\DUTs
 
 설치된 자일링스(Vivado 2015.4) 경로를 찾았습니다. (경로 : D:\Xilinx\Vivado\2015.4\)
 
-### 2) 프로젝트 경로
+### 3) 프로젝트 경로
 
 %PROJECT%Profiles/Config.ini 에 지정된 "Xilinx Synthesis" 섹션에서 얻은 경로를
 기본 경로로 지정합니다. 직접 변경이 가능합니다.
 
-### 3) 페밀리
+### 4) 페밀리
 
 자일링스 디바이스 페밀리를 지정합니다.
 리스트에 대부분 추가하였지만, 사용자가 직접 입력 가능합니다.
@@ -82,38 +88,46 @@ PROJECT_PATH = %PROJECT%System\HDL\DUTs
 직접 입력하여야 합니다.
 (존재하지 않는 디바이스가 있다면, 알려주시기 바랍니다.)
 
-### 4) 디바이스
+### 5) 디바이스
 
 자일링스 디바이스 이름을 지정합니다.
 
-### 5) 패키지
+### 6) 패키지
 
 자일링스 디바이스에 해당하는 패키지 종류를 지정합니다.
 
-### 6) 스피드
+### 7) 스피드
 
 자일링스 디바이스의 동작 스피드 레이트를 지정합니다.
 
-### 7) 목표 속도 (MHz)
+### 8) 목표 속도 (MHz)
 
 합성의 목표 속도(MHz) 를 지정합니다.
 타겟 클럭 Constraint 를 주는데 사용됩니다.
 
-### 8) 클럭 신호
+### 9) 클럭 신호
 
 목표 속도를 지정할 클럭 신호를 나열합니다.
 
-### 9) 리셋 신호
+### 10) 리셋 신호
 
 리셋 신호를 지정합니다.
 지정한 리셋 신호는 TIG(Timing Ignore) 속성의 constraint 를 가집니다.
  
-### 10) 최대 경로 수
+### 11) 최대 경로 수
 
 합성 리포트에 나열할 Critical path 의 최대 경로 개수를 지정합니다.
 1~100 의 범위를 가질 수 있습니다..
 
-## 2. 테이블 설명
+
+## 2. H/W 타이밍 설명
+
+![HW_Timming](img/hw_timmings.jpg)
+
+결과 테이블의 내용 이해를 돕기, 위해 먼저 H/W 타이밍에 대하여 간략하게 설명합니다.
+
+
+## 3. 테이블 설명
 
  
 테이블에 표시되는 각각의 의미는 다음과 같습니다.
@@ -234,7 +248,7 @@ FPGA 상의 제한된 DSPs 수 이상을 사용하게 되면,
 특히 '조합 딜레이는' 다른 모듈과 연결할 때, 해당 모듈의 'Setup/Hold 시간' 에 악영향을 미치므로 가능한 없어야 합니다.
 
 
-## 3. 좋은 디자인 설계를 위해...
+## 4. 좋은 디자인 설계를 위해...
 
 위 테이블의 MAD.v 는 Multiply & Adder 연산을 하는 매우 간단한 연산이며,  아래처럼 클럭을 사용하지 않고 32비트의 $$A * B + C$$ 연산을 수행하는 디자인입니다.
 
