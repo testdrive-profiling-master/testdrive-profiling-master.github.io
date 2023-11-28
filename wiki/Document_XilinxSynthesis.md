@@ -143,7 +143,7 @@ Slack time 은 요구되는 클럭의 딜레이 시간에 대한 상대적 여�
 
 다만 multicycle path('N') 의 경우 requirement delay 가 N 배수만큼 증가 되어 반영됩니다. 때문에 이경우는 다음과 같이 동작속도가 결정됩니다.
 
-**$$ estimated_maximum_operation_speed(\hertz) = \frac{1sec}{(requirement_delay - slack_time)}  * Multicycle_count $$**
+**$$ estimated_maximum_operation_speed(\hertz) = \frac{1sec}{(requirement_delay - slack_time)} \times Multicycle_count $$**
 
 ## 3. 테이블 설명
 
