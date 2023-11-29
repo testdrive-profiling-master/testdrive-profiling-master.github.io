@@ -1,21 +1,20 @@
 <html lang="en">
 	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
 	<title>Markdown Editor</title>
 	<link rel="stylesheet" href="css/editormd.css" />
 	<div id="test-editor">
 		<textarea style="display:none;"></textarea>
 	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="lib/marked.min.js"></script>
-	<script src="lib/prettify.min.js"></script>
-	<script src="lib/raphael.min.js"></script>
-	<script src="lib/underscore.min.js"></script>
-	<script src="lib/sequence-diagram.min.js"></script>
-	<script src="lib/flowchart.min.js"></script>
-	<script src="lib/jquery.flowchart.min.js"></script>
-	<script src="editormd.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="editormd.min.js"></script>
 	<script src="languages/en.js"></script>   
 	<script type="text/javascript">
+		editormd.katexURL = {
+			js  : "lib/katex.min.js",
+			css : "lib/katex.min.css"
+		};
 		$(function() {
 			var editor;
 			editor = editormd("test-editor", {

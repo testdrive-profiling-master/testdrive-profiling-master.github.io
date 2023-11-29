@@ -1,1 +1,1 @@
-https://pandao.github.io/editor.md/
+https://github.com/pandao/editor.md
