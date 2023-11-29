@@ -10,7 +10,6 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="lib/marked.min.js"></script>
-	<script src="lib/katex.min.js"></script>
 	<script src="lib/prettify.min.js"></script>
 	<script src="lib/raphael.min.js"></script>
 	<script src="lib/underscore.min.js"></script>
@@ -18,9 +17,8 @@
 	<script src="lib/flowchart.min.js"></script>
 	<script src="lib/jquery.flowchart.min.js"></script>
 	<script src="editormd.min.js"></script>
-	<script src="languages/en.js"></script>   
+	<script src="languages/en.js"></script>
 	
-	<link rel="stylesheet" href="lib/katex.min.css" />
 	<script type="text/javascript">
 		editormd.katexURL = {
 			js  : "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min",
@@ -29,6 +27,7 @@
 		$(function() {
 			var editor;
 			editor = editormd("test-editor", {
+				height   	    : "97vh",
 				htmlDecode      : "style,script,iframe",  // you can filter tags decode
 				emoji           : true,
 				taskList        : true,
