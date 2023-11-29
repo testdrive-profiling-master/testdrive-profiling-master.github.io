@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +10,7 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="../editormd/lib/marked.min.js"></script>
-	<script src="../editormd/lib/katex.min.js"></script>
+	<!--<script src="../editormd/lib/katex.min.js"></script>-->
 	<script src="../editormd/lib/prettify.min.js"></script>
 	<script src="../editormd/lib/raphael.min.js"></script>
 	<script src="../editormd/lib/underscore.min.js"></script>
@@ -19,11 +20,11 @@
 	<script src="../editormd/editormd.min.js"></script>
 	<script src="../editormd/languages/en.js"></script>   
 	
-	<link rel="stylesheet" href="../editormd/lib/katex.min.css" />
+	<!--<link rel="stylesheet" href="../editormd/lib/katex.min.css" />-->
 	<script type="text/javascript">
 		editormd.katexURL = {
-			js  : "../editormd/lib/katex.min.js",
-			css : "../editormd/lib/katex.min"
+			js  : "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min",
+			css : "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min"
 		};
 		$(function() {
 			var editor;
