@@ -14,7 +14,7 @@
 		* [Virtual Display](?Document_VirtualDisplay.md)
 		* [System Chart](?Document_SystemChart.md)
 * #### Utils
-	* codegen : Documentation coming soon...
+	* [codegen (manual is under-construction)](../download/codegen_userguide.pdf) : code generator (Lua custom for TestDrive)
 	* [docgen (korean only yet!)](../download/docgen_userguide.pdf) : document generator (.docx, .pdf)
 	* [verigen](../download/verigen_userguide.pdf) : verilog generator (codegen(Lua) is integrated to verilog)
 * #### Links
