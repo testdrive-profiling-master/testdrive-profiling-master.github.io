@@ -4,6 +4,7 @@
 * #### Tutorials
 	* [Software(C/C++) project tutorial](?tutorial_sw.md)
 	* [Hardware(Verilog/DPI) project tutorial](?tutorial_hw.md)
+	* [DocGen(Document Generator) project tutorial](?tutorial_docgen.md)
 * #### Document Profiles
 	* Common
 		* [System Manager](?Document_SystemManager.md)
