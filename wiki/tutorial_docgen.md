@@ -78,7 +78,7 @@ It makes .docx(WORD) and .pdf files in same folder.
 > :fa-send-o:Tip : It is recommend that you update the index by running the following at first. "Project Explorer :fa-arrow-right: mouse left button :fa-arrow-right: index :fa-arrow-right: Rebuild".
 
 ## 4. Manual
-* [ÇÑ±¹¾î ¸Þ´º¾ó](../download/docgen_userguide_ko.pdf)
+* [í•œêµ­ì–´ ë©”ë‰´ì–¼](../download/docgen_userguide_ko.pdf)
 * [English manual](../download/docgen_userguide_en.pdf)
 
 ### [:fa-arrow-left: Back](?top.md)
