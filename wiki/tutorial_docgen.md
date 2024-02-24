@@ -75,10 +75,13 @@ Build command is `make`.
 It makes .docx(WORD) and .pdf files in same folder.
 
 
-> :fa-send-o:Tip : It is recommend that you update the index by running the following at first. "Project Explorer :fa-arrow-right: mouse left button :fa-arrow-right: index :fa-arrow-right: Rebuild".
 
 ## 4. Manual
+To write appropriate content, please see the more detailed manual below.
+
 * [한국어 메뉴얼](../download/docgen_userguide_ko.pdf)
 * [English manual](../download/docgen_userguide_en.pdf)
+
+> :fa-send-o:Tip : This manual was also produced with docgen.
 
 ### [:fa-arrow-left: Back](?top.md)
