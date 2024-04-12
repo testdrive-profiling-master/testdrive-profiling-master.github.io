@@ -19,8 +19,13 @@
 	* [docgen](?tutorial_docgen.md) ([korean version](../download/docgen_userguide_ko.pdf), [english version](../download/docgen_userguide_en.pdf)) : document generator (.docx, .pdf)
 	* [verigen](../download/verigen_userguide.pdf) : verilog generator (codegen(Lua) is integrated to verilog)
 * #### Links
-	* github : https://github.com/testdrive-profiling-master
-	* home : https://testdrive-profiling-master.github.io/
+
+<center>Page</center>|<center>Link</center>
+-|-
+:fa-github: github | https://github.com/testdrive-profiling-master
+:fa-home: Home | https://testdrive-profiling-master.github.io
+:fa-youtube-play: Youtube | https://www.youtube.com/clonex7
+
 
 [========]
 > #### License

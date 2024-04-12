@@ -2,13 +2,29 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hWhtecGd4l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-It can be installed only in **Windows 7** or higher 64bit environment.
+**Main Features**
+
+* Alternative linux environment on windows with msys2/MinGW(UCRT version).
+* S/W & H/W build & co-simulation supports.
+* Dynamic documents support for CI(Continuous Integration) environment.
+
+It can be installed only in **Windows 7/10/11** or higher 64bit OS environment.
 
 ## 1. Easy way
-Download and Run below link.
+It help to install full feature of 'TestDrive Profiling Master'.
+<i>**Download and Run**</i> below link.
 > **[TestDrive Profiling Master Installer](../download/TestDrive_Profiling_Master.exe)** - (Automatic installation from git repositories.)
->( It is recommended to install **[git](https://git-scm.com/downloads)** and **[tortoisegit](https://tortoisegit.org/download/)** separately. )
- 
+>( It is **strongly** recommended to install **[git](https://git-scm.com/downloads)** and **[tortoisegit](https://tortoisegit.org/download/)** separately. )
+
+#### (1) Run 'TestDrive_Profiling_Master.exe'
+```bash
+******************************************************
+****        TestDrive Automatic Installer.        ****
+******************************************************
+
+Set your install path (default[C:\Project]) :
+```
+Put your installation path or just leave it and press enter key. :)
 
 ## 2. Hard way, but more details
 

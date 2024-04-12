@@ -1,7 +1,7 @@
 # Tutorial : DocGen(Document Generator) Project
 
 docgen is a tool that automatically creates new WORD (.docx) and PDF (.pdf) documents by referring to template WORD (.docx) file.
-> :fa-send-o:Tip : To use all of docgen's features, additional installation of Microsoft's WORD and Visio is required.
+> :fa-send-o:Tip : To use all of docgen's features, additional installation of Microsoft's WORD and Visio(optional) is required.
 
 #### Quick approach) "Project creation :fa-arrow-right: build" series of an example
 ```bash
