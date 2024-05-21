@@ -106,5 +106,7 @@ AddParagraph("[[src/Contents.md]]")
 Build command is `make`.
 It makes .docx(WORD) and .pdf files in same folder.
 
+Docgen manual example : https://github.com/testdrive-profiling-master/profiles/tree/master/Common/doc/docgen
+
 
 ### [:fa-arrow-left: Back](?top.md)
