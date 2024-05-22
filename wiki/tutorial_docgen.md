@@ -1,7 +1,7 @@
 # Tutorial : DocGen(Document Generator) Project
 
 <p align="center">
-  <img width= "65%" src="img/docgen_introduction.svg">
+  <img width= "60%" src="img/docgen_introduction.svg">
 </p>
 
 docgen is a tool that refers to a template WORD (.docx) file and creates a new WORD (.docx) and various documents such as PDF/HTML/RTF through Markdown + HTML + Lua script.
