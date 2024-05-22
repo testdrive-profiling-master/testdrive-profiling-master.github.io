@@ -1,7 +1,11 @@
 # Tutorial : DocGen(Document Generator) Project
 
-docgen is a tool that automatically creates new WORD (.docx) and PDF (.pdf) documents by referring to template WORD (.docx) file.
-> :fa-send-o:Tip : To use all of docgen's features, additional installation of Microsoft's WORD, Excel and Visio(optional) is required. This manual below was also produced with docgen.
+<p align="center">
+  <img width= "85%" src="img/docgen_introduction.svg">
+</p>
+
+docgen is a tool that refers to a template WORD (.docx) file and creates a new WORD (.docx) and various documents such as PDF/HTML/RTF through Markdown + HTML + Lua script.
+> :fa-send-o:Tip : To use all of docgen's features, additional installation of Microsoft's WORD, Excel/Visio(optional) is required. This manual below was also produced by DocGen.
 
 To write appropriate content, please see the more detailed manual below.
 
