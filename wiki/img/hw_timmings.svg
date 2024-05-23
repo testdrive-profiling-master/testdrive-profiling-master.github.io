@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Microsoft Visio, SVG Export에서 생성되었습니다. multicycle_path.vsdx.paths.svg paths -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="3.30709in" height="1.41732in"
+		viewBox="0 0 238.11 102.047" xml:space="preserve" color-interpolation-filters="sRGB" class="st21">
+	<v:documentProperties v:langID="1042" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvConvertTheme"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {marker-end:url(#mrkr4-6);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st2 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.33333333333333}
+		.st3 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st4 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.2}
+		.st5 {fill:#000000;font-family:Arial;font-size:0.416656em;font-weight:bold}
+		.st6 {fill:#ffffff;fill-opacity:0.9;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st7 {fill:#000000;font-family:Arial;font-size:0.333344em;font-weight:bold}
+		.st8 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st9 {fill:#000000;font-family:굴림;font-size:0.666664em;font-weight:bold}
+		.st10 {fill:#000000;font-family:Arial;font-size:0.833336em;font-weight:bold}
+		.st11 {fill:#000000;font-family:Arial;font-size:0.250008em;font-weight:bold}
+		.st12 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st13 {marker-end:url(#mrkr5-86);marker-start:url(#mrkr5-84);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st14 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.14285714285714}
+		.st15 {font-size:1em}
+		.st16 {font-family:굴림;font-size:1em}
+		.st17 {marker-end:url(#mrkr4-136);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st18 {marker-start:url(#mrkr4-142);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st19 {marker-end:url(#mrkr5-86);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st20 {fill:#000000;fill-opacity:0.15;stroke:none;stroke-linecap:butt;stroke-width:6.375}
+		.st21 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-6" class="st2" v:arrowType="4" v:arrowSize="0" v:setback="6" refX="-6" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3,-3) "/>
+		</marker>
+		<g id="lend5">
+			<path d="M 2 1 L 0 0 L 1.98117 -0.993387 C 1.67173 -0.364515 1.67301 0.372641 1.98465 1.00043 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr5-84" class="st14" v:arrowType="5" v:arrowSize="0" v:setback="10.75" refX="10.75" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend5" transform="scale(7) "/>
+		</marker>
+		<marker id="mrkr5-86" class="st14" v:arrowType="5" v:arrowSize="0" v:setback="12.25" refX="-12.25" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend5" transform="scale(-7,-7) "/>
+		</marker>
+		<marker id="mrkr4-136" class="st2" v:arrowType="4" v:arrowSize="0" v:setback="5.5" refX="-5.5" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3,-3) "/>
+		</marker>
+		<marker id="mrkr4-142" class="st2" v:arrowType="4" v:arrowSize="0" v:setback="5.5" refX="5.5" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(3) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>paths</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="연결선" v:index="0"/>
+		<g id="shape117-1" v:mID="117" v:groupContext="shape" transform="translate(36.8504,-45.3543)">
+			<title>시트.117</title>
+			<path d="M0 102.05 L41.03 102.05" class="st1"/>
+		</g>
+		<g id="shape118-7" v:mID="118" v:groupContext="shape" transform="translate(82.2047,-45.3543)">
+			<title>시트.118</title>
+			<path d="M0 102.05 L41.03 102.05" class="st1"/>
+		</g>
+		<g id="shape119-12" v:mID="119" v:groupContext="shape" transform="translate(155.906,-45.3543)">
+			<title>시트.119</title>
+			<path d="M0 102.05 L41.03 102.05" class="st1"/>
+		</g>
+		<g id="shape2-17" v:mID="2" v:groupContext="shape" transform="translate(138.898,28.3465) rotate(90)">
+			<title>시트.2</title>
+			<path d="M0 102.05 L31.18 102.05" class="st3"/>
+		</g>
+		<g id="shape3-20" v:mID="3" v:groupContext="shape" transform="translate(31.1811,-73.7008)">
+			<title>시트.3</title>
+			<desc>F/F</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="5.66929" cy="99.2126" width="11.34" height="5.66929"/>
+			<rect x="0" y="96.378" width="11.3386" height="5.66929" class="st4"/>
+			<text x="1.92" y="100.71" class="st5" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>F/F</text>		</g>
+		<g id="shape4-23" v:mID="4" v:groupContext="shape" transform="translate(184.252,28.3465) rotate(90)">
+			<title>시트.4</title>
+			<path d="M0 102.05 L56.69 102.05" class="st3"/>
+		</g>
+		<g id="shape5-26" v:mID="5" v:groupContext="shape" transform="translate(76.5354,-73.7008)">
+			<title>시트.5</title>
+			<desc>F/F</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="5.66929" cy="99.2126" width="11.34" height="5.66929"/>
+			<rect x="0" y="96.378" width="11.3386" height="5.66929" class="st4"/>
+			<text x="1.92" y="100.71" class="st5" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>F/F</text>		</g>
+		<g id="shape6-29" v:mID="6" v:groupContext="shape" transform="translate(39.6849,-39.7455)">
+			<title>시트.6</title>
+			<desc>Data path #1</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="19.3326" cy="83.6378" width="38.67" height="36.8189"/>
+			<path d="M7.09 70.93 C7.46 70.54 7.75 70.24 8.05 69.9 C9.85 67.92 12.09 64.79 14.31 65.23 C15.86 65.53 17.41 67.59 18.8
+						 68.83 C20.67 70.5 22.26 70.68 24.95 69.79 C27.63 68.91 31.39 66.97 33.61 67.87 C35.67 68.71 36.38 72 36.27
+						 74.74 C36.18 77.07 35.48 78.99 35.4 80.68 C35.28 83.41 36.8 85.52 37.91 88.63 C38.55 90.42 39.05 92.53 38.26
+						 93.62 C37.47 94.69 35.42 94.76 33.93 95.38 C30.56 96.81 30.1 101.11 26.81 101.91 C24.59 102.46 21.06 101.39
+						 18.02 100.58 C15.39 99.88 13.12 99.38 10.25 99.81 C8.44 100.09 6.39 100.74 4.78 100.85 C0.95 101.13 -0.35
+						 98.35 0.08 95.44 C0.36 93.54 1.38 91.59 2.02 89.07 C2.37 87.72 2.61 86.21 2.41 84.72 C2.1 82.48 0.77 80.3
+						 0.44 78.62 C-0.33 74.63 4.54 73.48 7.09 70.93 Z" class="st6"/>
+			<text x="7.44" y="84.84" class="st7" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>Data path #1</text>		</g>
+		<g id="shape14-32" v:mID="14" v:groupContext="shape" transform="translate(229.606,28.3465) rotate(90)">
+			<title>시트.14</title>
+			<path d="M0 102.05 L34.02 102.05" class="st3"/>
+		</g>
+		<g id="shape15-35" v:mID="15" v:groupContext="shape" transform="translate(121.89,-73.7008)">
+			<title>시트.15</title>
+			<desc>F/F</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="5.66929" cy="99.2126" width="11.34" height="5.66929"/>
+			<rect x="0" y="96.378" width="11.3386" height="5.66929" class="st4"/>
+			<text x="1.92" y="100.71" class="st5" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>F/F</text>		</g>
+		<g id="shape7-38" v:mID="7" v:groupContext="shape" transform="translate(257.953,28.3465) rotate(90)">
+			<title>시트.7</title>
+			<path d="M0 102.05 L56.69 102.05" class="st3"/>
+		</g>
+		<g id="shape8-41" v:mID="8" v:groupContext="shape" transform="translate(150.236,-73.7008)">
+			<title>시트.8</title>
+			<desc>F/F</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="5.66929" cy="99.2126" width="11.34" height="5.66929"/>
+			<rect x="0" y="96.378" width="11.3386" height="5.66929" class="st4"/>
+			<text x="1.92" y="100.71" class="st5" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>F/F</text>		</g>
+		<g id="shape9-44" v:mID="9" v:groupContext="shape" transform="translate(303.307,28.3465) rotate(90)">
+			<title>시트.9</title>
+			<path d="M0 102.05 L31.18 102.05" class="st3"/>
+		</g>
+		<g id="shape10-47" v:mID="10" v:groupContext="shape" transform="translate(195.591,-73.7008)">
+			<title>시트.10</title>
+			<desc>F/F</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="5.66929" cy="99.2126" width="11.34" height="5.66929"/>
+			<rect x="0" y="96.378" width="11.3386" height="5.66929" class="st4"/>
+			<text x="1.92" y="100.71" class="st5" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>F/F</text>		</g>
+		<g id="shape12-50" v:mID="12" v:groupContext="shape" transform="translate(127.559,-39.685)">
+			<title>시트.12</title>
+			<desc>……</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="14.1732" cy="85.0394" width="28.35" height="34.0157"/>
+			<rect x="0" y="68.0315" width="28.3465" height="34.0157" class="st8"/>
+			<text x="6.32" y="87.64" class="st9" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>……</text>		</g>
+		<g id="shape1-53" v:mID="1" v:groupContext="shape" transform="translate(2.83465,-39.685)">
+			<title>시트.1</title>
+			<desc>I</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="5.66929" cy="85.0394" width="11.34" height="34.0157"/>
+			<rect x="0" y="68.0315" width="11.3386" height="34.0157" class="st4"/>
+			<text x="4.28" y="88.04" class="st10" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>I</text>		</g>
+		<g id="shape13-56" v:mID="13" v:groupContext="shape" transform="translate(223.937,-39.685)">
+			<title>시트.13</title>
+			<desc>O</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="5.66929" cy="85.0394" width="11.34" height="34.0157"/>
+			<rect x="0" y="68.0315" width="11.3386" height="34.0157" class="st4"/>
+			<text x="1.78" y="88.04" class="st10" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>O</text>		</g>
+		<g id="shape17-59" v:mID="17" v:groupContext="shape" transform="translate(14.1732,-56.6929)">
+			<title>시트.17</title>
+			<path d="M0 102.05 L18.36 102.05" class="st1"/>
+		</g>
+		<g id="shape18-64" v:mID="18" v:groupContext="shape" transform="translate(201.26,-56.6929)">
+			<title>시트.18</title>
+			<path d="M0 102.05 L18.36 102.05" class="st1"/>
+		</g>
+		<g id="shape20-69" v:mID="20" v:groupContext="shape" transform="translate(19.8425,-56.6929)">
+			<title>시트.20</title>
+			<path d="M0 102.05 C5.67 102.05 0.98 78.1 25.05 69.71 C39.7 64.6 64.98 65.26 96.58 65.2 C130.8 65.14 172.42 64.25 186.5
+						 77.23 C196.31 86.27 192.76 102.05 198.43 102.05" class="st3"/>
+		</g>
+		<g id="shape19-72" v:mID="19" v:groupContext="shape" transform="translate(36.8504,-93.5433)">
+			<title>시트.19</title>
+			<desc>Combinational path</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="82.2047" cy="99.2126" width="164.41" height="5.66929"/>
+			<rect x="0" y="96.378" width="164.409" height="5.66929" class="st8"/>
+			<text x="68.21" y="100.11" class="st11" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>Combinational path</text>		</g>
+		<g id="shape22-75" v:mID="22" v:groupContext="shape" transform="translate(116.22,46.7717) rotate(90)">
+			<title>시트.22</title>
+			<path d="M0 102.05 L21.26 102.05" class="st12"/>
+		</g>
+		<g id="shape23-78" v:mID="23" v:groupContext="shape" transform="translate(36.8504,167.244) rotate(180)">
+			<title>시트.23</title>
+			<path d="M2.58 102.05 L2.94 102.05 L19.74 102.05" class="st13"/>
+		</g>
+		<g id="shape16-87" v:mID="16" v:groupContext="shape" transform="translate(85.0394,-39.7455)">
+			<title>시트.16</title>
+			<desc>Data path #2</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="19.3326" cy="83.6378" width="38.67" height="36.8189"/>
+			<path d="M7.09 70.93 C7.46 70.54 7.75 70.24 8.05 69.9 C9.85 67.92 12.09 64.79 14.31 65.23 C15.86 65.53 17.41 67.59 18.8
+						 68.83 C20.67 70.5 22.26 70.68 24.95 69.79 C27.63 68.91 31.39 66.97 33.61 67.87 C35.67 68.71 36.38 72 36.27
+						 74.74 C36.18 77.07 35.48 78.99 35.4 80.68 C35.28 83.41 36.8 85.52 37.91 88.63 C38.55 90.42 39.05 92.53 38.26
+						 93.62 C37.47 94.69 35.42 94.76 33.93 95.38 C30.56 96.81 30.1 101.11 26.81 101.91 C24.59 102.46 21.06 101.39
+						 18.02 100.58 C15.39 99.88 13.12 99.38 10.25 99.81 C8.44 100.09 6.39 100.74 4.78 100.85 C0.95 101.13 -0.35
+						 98.35 0.08 95.44 C0.36 93.54 1.38 91.59 2.02 89.07 C2.37 87.72 2.61 86.21 2.41 84.72 C2.1 82.48 0.77 80.3
+						 0.44 78.62 C-0.33 74.63 4.54 73.48 7.09 70.93 Z" class="st6"/>
+			<text x="7.44" y="84.84" class="st7" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>Data path #2</text>		</g>
+		<g id="shape11-90" v:mID="11" v:groupContext="shape" transform="translate(158.74,-39.7455)">
+			<title>시트.11</title>
+			<desc>Data path #N</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="19.3326" cy="83.6378" width="38.67" height="36.8189"/>
+			<path d="M7.09 70.93 C7.46 70.54 7.75 70.24 8.05 69.9 C9.85 67.92 12.09 64.79 14.31 65.23 C15.86 65.53 17.41 67.59 18.8
+						 68.83 C20.67 70.5 22.26 70.68 24.95 69.79 C27.63 68.91 31.39 66.97 33.61 67.87 C35.67 68.71 36.38 72 36.27
+						 74.74 C36.18 77.07 35.48 78.99 35.4 80.68 C35.28 83.41 36.8 85.52 37.91 88.63 C38.55 90.42 39.05 92.53 38.26
+						 93.62 C37.47 94.69 35.42 94.76 33.93 95.38 C30.56 96.81 30.1 101.11 26.81 101.91 C24.59 102.46 21.06 101.39
+						 18.02 100.58 C15.39 99.88 13.12 99.38 10.25 99.81 C8.44 100.09 6.39 100.74 4.78 100.85 C0.95 101.13 -0.35
+						 98.35 0.08 95.44 C0.36 93.54 1.38 91.59 2.02 89.07 C2.37 87.72 2.61 86.21 2.41 84.72 C2.1 82.48 0.77 80.3
+						 0.44 78.62 C-0.33 74.63 4.54 73.48 7.09 70.93 Z" class="st6"/>
+			<text x="7.11" y="84.84" class="st7" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>Data path #N</text>		</g>
+		<g id="shape25-93" v:mID="25" v:groupContext="shape" transform="translate(121.89,46.7717) rotate(-90) scale(-1,1)">
+			<title>시트.25</title>
+			<path d="M0 102.05 L21.26 102.05" class="st12"/>
+		</g>
+		<g id="shape26-96" v:mID="26" v:groupContext="shape" transform="translate(201.26,167.244) scale(1,-1)">
+			<title>시트.26</title>
+			<path d="M2.58 102.05 L2.94 102.05 L19.74 102.05" class="st13"/>
+		</g>
+		<g id="shape28-103" v:mID="28" v:groupContext="shape" transform="translate(14.1732,-28.3465)">
+			<title>시트.28</title>
+			<desc>Input setup time</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="11.3386" cy="97.7953" width="22.68" height="8.50394"/>
+			<rect x="0" y="93.5433" width="22.6772" height="8.50394" class="st8"/>
+			<text x="7.67" y="96.9" class="st11" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>Input<v:newlineChar/><tspan
+						x="3.84" dy="1.2em" class="st15">setup time</tspan></text>		</g>
+		<g id="shape29-107" v:mID="29" v:groupContext="shape" transform="translate(201.26,-28.3465)">
+			<title>시트.29</title>
+			<desc>Output hold time</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="11.3386" cy="97.7953" width="22.68" height="8.50394"/>
+			<rect x="0" y="93.5433" width="22.6772" height="8.50394" class="st8"/>
+			<text x="6.42" y="96.9" class="st11" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>Output<v:newlineChar/><tspan
+						x="4.67" dy="1.2em" class="st15">hold time</tspan></text>		</g>
+		<g id="shape30-111" v:mID="30" v:groupContext="shape" transform="translate(116.362,0)">
+			<title>시트.30</title>
+			<desc>max_frequency(Hz) = 1 sec. / (clock_pulse_request_delay – min...</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="59.4567" cy="99.2126" width="118.92" height="5.66929"/>
+			<rect x="0" y="96.378" width="118.913" height="5.66929" class="st8"/>
+			<text x="5.23" y="100.19" class="st11" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>max_frequency(Hz) = 1 sec. / (clock_pulse_request_delay <tspan
+						class="st16">–</tspan> min_slack_time)</text>		</g>
+		<g id="shape31-115" v:mID="31" v:groupContext="shape" transform="translate(229.606,63.7795) rotate(90)">
+			<title>시트.31</title>
+			<path d="M0 102.05 L3.26 102.05" class="st12"/>
+		</g>
+		<g id="shape32-118" v:mID="32" v:groupContext="shape" transform="translate(127.559,167.244) rotate(180)">
+			<title>시트.32</title>
+			<path d="M2.58 102.05 L2.94 102.05 L42.41 102.05" class="st13"/>
+		</g>
+		<g id="shape34-125" v:mID="34" v:groupContext="shape" transform="translate(85.0394,-28.3465)">
+			<title>시트.34</title>
+			<desc>Slack_time = Requirement_delay – data_path_delay</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="32.5984" cy="97.7953" width="65.2" height="8.50394"/>
+			<rect x="0" y="93.5433" width="65.1969" height="8.50394" class="st8"/>
+			<text x="4" y="96.75" class="st11" v:langID="1042"><v:paragraph/><v:tabList/>Slack_time =<v:newlineChar/><tspan x="4"
+						dy="1.274em" class="st15"> </tspan><tspan class="st15" v:langID="1033">Requirement</tspan>_delay <tspan
+						class="st16">–</tspan> data_path_delay</text>		</g>
+		<g id="shape35-131" v:mID="35" v:groupContext="shape" transform="translate(70.3832,-88.0692) rotate(11.3349)">
+			<title>시트.35</title>
+			<path d="M0 101.51 C13.9 95.71 48.38 88.66 71.05 89.63 C81.21 90.06 88.99 92.1 92.84 95.2 C96.59 98.22 96.58 102.26 103.29
+						 102.05 L103.64 102.01" class="st17"/>
+		</g>
+		<g id="shape36-137" v:mID="36" v:groupContext="shape" transform="translate(168.578,-87.3691) rotate(-10.8734) scale(-1,1)">
+			<title>시트.36</title>
+			<path d="M3.71 100.12 L4.04 99.99 C19.75 94.57 50.29 88.8 71 89.61 C81.14 90.01 88.93 91.99 92.77 95.09 C97.19 98.67
+						 96.37 103.74 107.48 101.52" class="st18"/>
+		</g>
+		<g id="shape40-143" v:mID="40" v:groupContext="shape" transform="translate(134.646,-80.7874)">
+			<title>시트.40</title>
+			<desc>Input setup time</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="13.4646" cy="97.7953" width="26.93" height="8.50394"/>
+			<rect x="0" y="93.5433" width="26.9291" height="8.50394" class="st8"/>
+			<text x="1.88" y="98.7" class="st11" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>Input setup time</text>		</g>
+		<g id="shape41-146" v:mID="41" v:groupContext="shape" transform="translate(75.1181,-79.3701)">
+			<title>시트.41</title>
+			<desc>Output hold time</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+			<v:textRect cx="13.4646" cy="97.7953" width="26.93" height="8.50394"/>
+			<rect x="0" y="93.5433" width="26.9291" height="8.50394" class="st8"/>
+			<text x="1.47" y="98.7" class="st11" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>Output hold time</text>		</g>
+		<g id="shape120-149" v:mID="120" v:groupContext="shape" transform="translate(75.966,74.9961) rotate(-77.9052)">
+			<title>시트.120</title>
+			<path d="M0 102.05 L37.65 102.05" class="st19"/>
+		</g>
+		<g id="shape121-154" v:mID="121" v:groupContext="shape" transform="translate(82.2047,-5.66929)">
+			<title>시트.121</title>
+			<desc>Multicycle path</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="36.8504" cy="99.2126" width="73.71" height="5.66929"/>
+			<rect x="0" y="96.378" width="73.7008" height="5.66929" class="st8"/>
+			<text x="26.01" y="100.11" class="st11" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>Multicycle path</text>		</g>
+		<g id="shape122-157" v:mID="122" v:groupContext="shape" transform="translate(82.2047,-19.8425)">
+			<title>시트.122</title>
+			<path d="M0 102.05 L69.38 102.05" class="st1"/>
+		</g>
+		<g id="shape124-162" v:mID="124" v:groupContext="shape" transform="translate(85.0394,-11.4882)">
+			<title>시트.124</title>
+			<desc>Data path #X through to +α</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="32.5984" cy="93.6929" width="65.2" height="16.7087"/>
+			<path d="M11.95 87.92 C12.58 87.75 13.07 87.61 13.58 87.46 C16.6 86.56 20.39 85.14 24.13 85.34 C26.75 85.48 29.35 86.41
+						 31.7 86.97 C34.85 87.73 37.54 87.81 42.06 87.41 C46.58 87.01 52.93 86.13 56.67 86.54 C60.14 86.92 61.35
+						 88.41 61.16 89.65 C61 90.71 59.83 91.58 59.7 92.35 C59.49 93.59 62.04 94.55 63.92 95.96 C65 96.77 65.85
+						 97.73 64.51 98.22 C63.18 98.71 59.72 98.74 57.22 99.02 C51.54 99.67 50.75 101.62 45.21 101.99 C41.46 102.23
+						 35.51 101.75 30.39 101.38 C25.95 101.06 22.12 100.84 17.28 101.03 C14.22 101.16 10.77 101.45 8.06 101.51
+						 C1.6 101.63 -0.59 100.37 0.13 99.05 C0.6 98.19 2.32 97.3 3.41 96.16 C4 95.55 4.41 94.86 4.06 94.18 C3.54
+						 93.17 1.3 92.18 0.75 91.41 C-0.56 89.61 7.65 89.08 11.95 87.92 Z" class="st6"/>
+			<text x="6.98" y="94.89" class="st7" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>Data path #X t<tspan
+						class="st15" v:langID="1033">hrough </tspan>to +<tspan class="st15" v:langID="1032">α</tspan></text>		</g>
+		<g id="shape125-167" v:mID="125" v:groupContext="shape" transform="translate(138.898,62.3622) rotate(90)">
+			<title>시트.125</title>
+			<path d="M0 102.05 L5.67 102.05" class="st12"/>
+		</g>
+		<g id="shape126-170" v:mID="126" v:groupContext="shape" transform="translate(303.307,62.3622) rotate(90)">
+			<title>시트.126</title>
+			<path d="M0 102.05 L5.67 102.05" class="st12"/>
+		</g>
+		<g id="group127-173" transform="translate(44.1976,-43.473)" v:mID="127" v:groupContext="group">
+			<title>시트.127</title>
+			<g id="shape128-174" v:mID="128" v:groupContext="shape" transform="translate(0,-1.81366)">
+				<title>시트.128</title>
+				<path d="M12.77 100.42 C7.7 99.58 3.98 95.19 4 90.05 C4 89.41 4.07 88.78 4.19 88.15 L4.22 88.15 L4.96 89.43 C5.19
+							 89.82 5.68 89.95 6.07 89.73 C6.46 89.51 6.59 89.01 6.37 88.62 L4.65 85.65 C4.54 85.47 4.36 85.33 4.16
+							 85.27 C3.95 85.22 3.73 85.25 3.54 85.35 L0.55 87.08 C0.15 87.29 0 87.78 0.21 88.17 C0.41 88.57 0.9 88.72
+							 1.3 88.52 C1.32 88.51 1.34 88.49 1.36 88.48 L2.6 87.77 C2.45 88.52 2.38 89.28 2.38 90.05 C2.36 95.97
+							 6.64 101.04 12.49 102.01 L12.63 102.01 C13.07 102.05 13.46 101.71 13.5 101.27 C13.54 100.82 13.2 100.43
+							 12.76 100.39 L12.77 100.42 Z" class="st20"/>
+			</g>
+			<g id="shape129-176" v:mID="129" v:groupContext="shape" transform="translate(15.4745,0)">
+				<title>시트.129</title>
+				<path d="M11.17 88.23 C11.17 86.79 10.92 85.35 10.42 84 C10.26 83.58 9.79 83.37 9.37 83.52 C8.95 83.68 8.74 84.15
+							 8.9 84.56 C10.92 90.01 8.15 96.06 2.71 98.09 C2.67 98.1 2.63 98.12 2.59 98.13 L3.33 96.84 C3.55 96.46
+							 3.42 95.96 3.03 95.74 C2.64 95.51 2.14 95.65 1.92 96.04 L0.22 99.02 C0 99.4 0.13 99.9 0.52 100.12 C0.52
+							 100.12 0.52 100.12 0.52 100.12 L3.5 101.82 C3.89 102.05 4.39 101.91 4.61 101.52 C4.83 101.14 4.7 100.64
+							 4.31 100.42 L3.05 99.7 C7.93 98.01 11.19 93.4 11.17 88.23 Z" class="st20"/>
+			</g>
+			<g id="shape130-178" v:mID="130" v:groupContext="shape" transform="translate(4.94063,-20.1998)">
+				<title>시트.130</title>
+				<path d="M14.83 100.33 C14.38 100.33 14.02 100.69 14.02 101.14 C14.02 101.59 14.38 101.95 14.83 101.95 L18.15 101.95
+							 C18.19 101.95 18.22 101.95 18.25 101.95 C18.4 101.95 18.55 101.9 18.68 101.82 L18.74 101.78 L18.76 101.76
+							 L18.82 101.72 C18.98 101.57 19.07 101.36 19.07 101.14 L19.07 97.71 C19.07 97.26 18.71 96.9 18.26 96.9
+							 C17.81 96.9 17.45 97.26 17.45 97.71 L17.45 99.19 C12.35 94.84 4.69 95.45 0.34 100.55 C0.33 100.57 0.31
+							 100.6 0.29 100.62 C0 100.96 0.04 101.47 0.39 101.76 C0.73 102.05 1.24 102 1.53 101.66 C5.24 97.24 11.83
+							 96.64 16.28 100.32 L14.83 100.33 Z" class="st20"/>
+			</g>
+		</g>
+		<g id="group131-180" transform="translate(89.5519,-43.473)" v:mID="131" v:groupContext="group">
+			<title>시트.131</title>
+			<g id="shape132-181" v:mID="132" v:groupContext="shape" transform="translate(0,-1.81366)">
+				<title>시트.132</title>
+				<path d="M12.77 100.42 C7.7 99.58 3.98 95.19 4 90.05 C4 89.41 4.07 88.78 4.19 88.15 L4.22 88.15 L4.96 89.43 C5.19
+							 89.82 5.68 89.95 6.07 89.73 C6.46 89.51 6.59 89.01 6.37 88.62 L4.65 85.65 C4.54 85.47 4.36 85.33 4.16
+							 85.27 C3.95 85.22 3.73 85.25 3.54 85.35 L0.55 87.08 C0.15 87.29 0 87.78 0.21 88.17 C0.41 88.57 0.9 88.72
+							 1.3 88.52 C1.32 88.51 1.34 88.49 1.36 88.48 L2.6 87.77 C2.45 88.52 2.38 89.28 2.38 90.05 C2.36 95.97
+							 6.64 101.04 12.49 102.01 L12.63 102.01 C13.07 102.05 13.46 101.71 13.5 101.27 C13.54 100.82 13.2 100.43
+							 12.76 100.39 L12.77 100.42 Z" class="st20"/>
+			</g>
+			<g id="shape133-183" v:mID="133" v:groupContext="shape" transform="translate(15.4745,0)">
+				<title>시트.133</title>
+				<path d="M11.17 88.23 C11.17 86.79 10.92 85.35 10.42 84 C10.26 83.58 9.79 83.37 9.37 83.52 C8.95 83.68 8.74 84.15
+							 8.9 84.56 C10.92 90.01 8.15 96.06 2.71 98.09 C2.67 98.1 2.63 98.12 2.59 98.13 L3.33 96.84 C3.55 96.46
+							 3.42 95.96 3.03 95.74 C2.64 95.51 2.14 95.65 1.92 96.04 L0.22 99.02 C0 99.4 0.13 99.9 0.52 100.12 C0.52
+							 100.12 0.52 100.12 0.52 100.12 L3.5 101.82 C3.89 102.05 4.39 101.91 4.61 101.52 C4.83 101.14 4.7 100.64
+							 4.31 100.42 L3.05 99.7 C7.93 98.01 11.19 93.4 11.17 88.23 Z" class="st20"/>
+			</g>
+			<g id="shape134-185" v:mID="134" v:groupContext="shape" transform="translate(4.94063,-20.1998)">
+				<title>시트.134</title>
+				<path d="M14.83 100.33 C14.38 100.33 14.02 100.69 14.02 101.14 C14.02 101.59 14.38 101.95 14.83 101.95 L18.15 101.95
+							 C18.19 101.95 18.22 101.95 18.25 101.95 C18.4 101.95 18.55 101.9 18.68 101.82 L18.74 101.78 L18.76 101.76
+							 L18.82 101.72 C18.98 101.57 19.07 101.36 19.07 101.14 L19.07 97.71 C19.07 97.26 18.71 96.9 18.26 96.9
+							 C17.81 96.9 17.45 97.26 17.45 97.71 L17.45 99.19 C12.35 94.84 4.69 95.45 0.34 100.55 C0.33 100.57 0.31
+							 100.6 0.29 100.62 C0 100.96 0.04 101.47 0.39 101.76 C0.73 102.05 1.24 102 1.53 101.66 C5.24 97.24 11.83
+							 96.64 16.28 100.32 L14.83 100.33 Z" class="st20"/>
+			</g>
+		</g>
+		<g id="group135-187" transform="translate(163.253,-43.473)" v:mID="135" v:groupContext="group">
+			<title>시트.135</title>
+			<g id="shape136-188" v:mID="136" v:groupContext="shape" transform="translate(0,-1.81366)">
+				<title>시트.136</title>
+				<path d="M12.77 100.42 C7.7 99.58 3.98 95.19 4 90.05 C4 89.41 4.07 88.78 4.19 88.15 L4.22 88.15 L4.96 89.43 C5.19
+							 89.82 5.68 89.95 6.07 89.73 C6.46 89.51 6.59 89.01 6.37 88.62 L4.65 85.65 C4.54 85.47 4.36 85.33 4.16
+							 85.27 C3.95 85.22 3.73 85.25 3.54 85.35 L0.55 87.08 C0.15 87.29 0 87.78 0.21 88.17 C0.41 88.57 0.9 88.72
+							 1.3 88.52 C1.32 88.51 1.34 88.49 1.36 88.48 L2.6 87.77 C2.45 88.52 2.38 89.28 2.38 90.05 C2.36 95.97
+							 6.64 101.04 12.49 102.01 L12.63 102.01 C13.07 102.05 13.46 101.71 13.5 101.27 C13.54 100.82 13.2 100.43
+							 12.76 100.39 L12.77 100.42 Z" class="st20"/>
+			</g>
+			<g id="shape137-190" v:mID="137" v:groupContext="shape" transform="translate(15.4745,0)">
+				<title>시트.137</title>
+				<path d="M11.17 88.23 C11.17 86.79 10.92 85.35 10.42 84 C10.26 83.58 9.79 83.37 9.37 83.52 C8.95 83.68 8.74 84.15
+							 8.9 84.56 C10.92 90.01 8.15 96.06 2.71 98.09 C2.67 98.1 2.63 98.12 2.59 98.13 L3.33 96.84 C3.55 96.46
+							 3.42 95.96 3.03 95.74 C2.64 95.51 2.14 95.65 1.92 96.04 L0.22 99.02 C0 99.4 0.13 99.9 0.52 100.12 C0.52
+							 100.12 0.52 100.12 0.52 100.12 L3.5 101.82 C3.89 102.05 4.39 101.91 4.61 101.52 C4.83 101.14 4.7 100.64
+							 4.31 100.42 L3.05 99.7 C7.93 98.01 11.19 93.4 11.17 88.23 Z" class="st20"/>
+			</g>
+			<g id="shape138-192" v:mID="138" v:groupContext="shape" transform="translate(4.94063,-20.1998)">
+				<title>시트.138</title>
+				<path d="M14.83 100.33 C14.38 100.33 14.02 100.69 14.02 101.14 C14.02 101.59 14.38 101.95 14.83 101.95 L18.15 101.95
+							 C18.19 101.95 18.22 101.95 18.25 101.95 C18.4 101.95 18.55 101.9 18.68 101.82 L18.74 101.78 L18.76 101.76
+							 L18.82 101.72 C18.98 101.57 19.07 101.36 19.07 101.14 L19.07 97.71 C19.07 97.26 18.71 96.9 18.26 96.9
+							 C17.81 96.9 17.45 97.26 17.45 97.71 L17.45 99.19 C12.35 94.84 4.69 95.45 0.34 100.55 C0.33 100.57 0.31
+							 100.6 0.29 100.62 C0 100.96 0.04 101.47 0.39 101.76 C0.73 102.05 1.24 102 1.53 101.66 C5.24 97.24 11.83
+							 96.64 16.28 100.32 L14.83 100.33 Z" class="st20"/>
+			</g>
+		</g>
+		<g id="group139-194" transform="translate(99.7795,-13.1266)" v:mID="139" v:groupContext="group">
+			<title>시트.139</title>
+			<g id="shape140-195" v:mID="140" v:groupContext="shape" transform="translate(0,-0.963883)">
+				<title>시트.140</title>
+				<path d="M6.79 101.18 C4.09 100.74 2.12 98.4 2.12 95.67 C2.13 95.33 2.16 94.99 2.23 94.66 L2.24 94.66 L2.64 95.34
+							 C2.76 95.55 3.02 95.62 3.22 95.5 C3.43 95.38 3.5 95.12 3.38 94.91 L2.47 93.33 C2.41 93.23 2.32 93.16
+							 2.21 93.13 C2.1 93.1 1.98 93.12 1.88 93.18 L0.29 94.09 C0.08 94.2 0 94.46 0.11 94.67 C0.22 94.88 0.48
+							 94.97 0.69 94.86 C0.7 94.85 0.71 94.84 0.72 94.84 L1.38 94.46 C1.3 94.86 1.26 95.26 1.26 95.67 C1.25
+							 98.82 3.53 101.51 6.64 102.03 L6.71 102.03 C6.95 102.05 7.16 101.87 7.17 101.63 C7.19 101.4 7.02 101.19
+							 6.78 101.17 L6.79 101.18 Z" class="st20"/>
+			</g>
+			<g id="shape141-197" v:mID="141" v:groupContext="shape" transform="translate(8.22406,0)">
+				<title>시트.141</title>
+				<path d="M5.94 94.71 C5.94 93.94 5.8 93.18 5.54 92.45 C5.45 92.23 5.2 92.12 4.98 92.2 C4.76 92.29 4.65 92.53 4.73
+							 92.76 C5.81 95.65 4.33 98.87 1.44 99.94 C1.42 99.95 1.4 99.96 1.38 99.97 L1.77 99.28 C1.89 99.08 1.82
+							 98.81 1.61 98.69 C1.4 98.57 1.14 98.65 1.02 98.85 L0.12 100.44 C0 100.64 0.07 100.91 0.28 101.02 C0.28
+							 101.02 0.28 101.02 0.28 101.02 L1.86 101.93 C2.07 102.05 2.33 101.98 2.45 101.77 C2.57 101.56 2.5 101.3
+							 2.29 101.18 L1.62 100.8 C4.21 99.9 5.95 97.45 5.94 94.71 Z" class="st20"/>
+			</g>
+			<g id="shape142-199" v:mID="142" v:groupContext="shape" transform="translate(2.62574,-10.7354)">
+				<title>시트.142</title>
+				<path d="M7.88 101.14 C7.64 101.14 7.45 101.33 7.45 101.57 C7.45 101.8 7.64 102 7.88 102 L9.65 102 C9.66 102 9.68
+							 102 9.7 102 C9.78 102 9.86 101.97 9.93 101.92 L9.96 101.9 L9.97 101.89 L10 101.87 C10.08 101.79 10.13
+							 101.68 10.13 101.57 L10.13 99.74 C10.13 99.5 9.94 99.31 9.7 99.31 C9.47 99.31 9.27 99.5 9.27 99.74 L9.27
+							 100.53 C6.56 98.22 2.49 98.54 0.18 101.25 C0.17 101.26 0.16 101.28 0.15 101.29 C0 101.47 0.02 101.74
+							 0.2 101.89 C0.39 102.05 0.66 102.02 0.81 101.84 C2.79 99.49 6.29 99.17 8.65 101.13 L7.88 101.14 Z"
+						class="st20"/>
+			</g>
+		</g>
+		<g id="group143-201" transform="translate(120.472,-11.513)" v:mID="143" v:groupContext="group">
+			<title>시트.143</title>
+			<g id="shape144-202" v:mID="144" v:groupContext="shape" transform="translate(0,-0.963883)">
+				<title>시트.144</title>
+				<path d="M6.79 101.18 C4.09 100.74 2.12 98.4 2.12 95.67 C2.13 95.33 2.16 94.99 2.23 94.66 L2.24 94.66 L2.64 95.34
+							 C2.76 95.55 3.02 95.62 3.22 95.5 C3.43 95.38 3.5 95.12 3.38 94.91 L2.47 93.33 C2.41 93.23 2.32 93.16
+							 2.21 93.13 C2.1 93.1 1.98 93.12 1.88 93.18 L0.29 94.09 C0.08 94.2 0 94.46 0.11 94.67 C0.22 94.88 0.48
+							 94.97 0.69 94.86 C0.7 94.85 0.71 94.84 0.72 94.84 L1.38 94.46 C1.3 94.86 1.26 95.26 1.26 95.67 C1.25
+							 98.82 3.53 101.51 6.64 102.03 L6.71 102.03 C6.95 102.05 7.16 101.87 7.17 101.63 C7.19 101.4 7.02 101.19
+							 6.78 101.17 L6.79 101.18 Z" class="st20"/>
+			</g>
+			<g id="shape145-204" v:mID="145" v:groupContext="shape" transform="translate(8.22406,0)">
+				<title>시트.145</title>
+				<path d="M5.94 94.71 C5.94 93.94 5.8 93.18 5.54 92.45 C5.45 92.23 5.2 92.12 4.98 92.2 C4.76 92.29 4.65 92.53 4.73
+							 92.76 C5.81 95.65 4.33 98.87 1.44 99.94 C1.42 99.95 1.4 99.96 1.38 99.97 L1.77 99.28 C1.89 99.08 1.82
+							 98.81 1.61 98.69 C1.4 98.57 1.14 98.65 1.02 98.85 L0.12 100.44 C0 100.64 0.07 100.91 0.28 101.02 C0.28
+							 101.02 0.28 101.02 0.28 101.02 L1.86 101.93 C2.07 102.05 2.33 101.98 2.45 101.77 C2.57 101.56 2.5 101.3
+							 2.29 101.18 L1.62 100.8 C4.21 99.9 5.95 97.45 5.94 94.71 Z" class="st20"/>
+			</g>
+			<g id="shape146-206" v:mID="146" v:groupContext="shape" transform="translate(2.62574,-10.7354)">
+				<title>시트.146</title>
+				<path d="M7.88 101.14 C7.64 101.14 7.45 101.33 7.45 101.57 C7.45 101.8 7.64 102 7.88 102 L9.65 102 C9.66 102 9.68
+							 102 9.7 102 C9.78 102 9.86 101.97 9.93 101.92 L9.96 101.9 L9.97 101.89 L10 101.87 C10.08 101.79 10.13
+							 101.68 10.13 101.57 L10.13 99.74 C10.13 99.5 9.94 99.31 9.7 99.31 C9.47 99.31 9.27 99.5 9.27 99.74 L9.27
+							 100.53 C6.56 98.22 2.49 98.54 0.18 101.25 C0.17 101.26 0.16 101.28 0.15 101.29 C0 101.47 0.02 101.74
+							 0.2 101.89 C0.39 102.05 0.66 102.02 0.81 101.84 C2.79 99.49 6.29 99.17 8.65 101.13 L7.88 101.14 Z"
+						class="st20"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -131,7 +131,9 @@ It can range from 1 to 100.
 
 ## 2. H/W timing explanation
 
-![HW_Timming](img/hw_timmings.jpg)
+<p align="center">
+  <img width= "85%" src="img/hw_timmings.svg">
+</p>
 
 To help you understand the contents of the result table, we will first briefly explain H/W timing.
 Usually, the timing below can be derived for one IP.
@@ -144,8 +146,29 @@ Usually, the timing below can be derived for one IP.
 > This refers to the maximum time taken from the register saved by clock to the output pin.
 * **Slack time**
 > This refers to the time remaining after subtracting the time taken between adjacent registers from the requirement time (Requirement delay: 1/clock operation speed). If this value is negative, it means that it takes longer than the clock operation time, so the required operation speed may not be achieved properly.
+* **Multicycle path**
+> There is no way to distinguish between multicycle path and 1 cycle path in HDL.
+So seperated special constraint settings are required.
+Nevertheless, the reason for using the multicycle path is that
+it has the advantage of easily improving clock speed without consuming F/F and HDL modification.
+In a general way, high clock speeds can be achieved by dividing a very large combinational path 
+into smaller data paths through multiple F/F slices.
+However, it is very difficult to design HDL by dividing to more smaller design
+into uniform time intervals.
+<p align="center"><img width= "85%" src="img/multicycle_path.svg"></p>
+First, 1 cycle path refers to the path between F/F where the hold time is 0 and the setup time is 1.
+To put it more simply, it means that it receives input from the 0th clock and outputs from the 1st clock.
+If the input is received from the 0th clock and the output is taken from the Nth clock that
+is greater than 1, a higher clock can be used.
+For example, if you specify a constraint that receives input from the 0th clock and output from the 3rd clock,
+The setup time must be 3.
+However, the hold time is counted in the opposite direction from the second clock just before the 3rd clock.
+So hold time should be 2.
+In other words, the multicycle path designation of N cycle latencies has N setup time and (N-1) hold time.
+Lastly, using a multicycle path means maintaining the same value as the input clock latency, 
+so TCL scripts must use `set_multicycle_path ~[hold/setup]~ from ~ [cells]` as shown above.
 
-At this time, if combinational delay time exists, a new setup/hold time may be created when connecting to another IP. If the setup/hold time exceeds the required operation speed, the measured slack time may be increased when connecting to another IP. Slack time is created, which causes the operation speed to slow down. Therefore, it can be said that a good design is to have a design that has as low a setup/hold time as possible and eliminates combination paths as much as possible.
+At this time, if combinational delay time exists, a new setup/hold time may be created when connecting to another HDL design. If the setup/hold time exceeds the required operation speed, the measured slack time may be increased when connecting to another HDL design. Slack time is created, which causes the operation speed to slow down. Therefore, it can be said that a good design is to have a design that has as low a setup/hold time as possible and eliminates combination paths as much as possible.
 Slack time is a relative slack time to the required clock delay time, so the maximum operating speed can be calculated as follows.
 
 $$Estimated\,maximum\,operation\,speed(\mathrm{Hz}) = \frac{1\mathrm{sec}}{(requirement\,delay - slack\,time)}$$
