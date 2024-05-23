@@ -11,7 +11,7 @@
 
 You can build HDL for Xilinx FPGA, measure operation speed, setup/hold time, combination delay, Registers / LUTs / BRAMs usage, and compare the results of previous builds by file.
 
-Xilinx's Vivado must be installed.
+This requires installing Vivado of Xilinx.
 No separate mention is made here of obtaining a Xilinx license.
 (Refer. : [Vivado download page](https://www.xilinx.com/support/download.html))
 
