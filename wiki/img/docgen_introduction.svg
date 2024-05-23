@@ -164,11 +164,11 @@
 		</g>
 		<g id="shape20-68" v:mID="20" v:groupContext="shape" transform="translate(109.134,-34.0157)">
 			<title>시트.20</title>
-			<desc>ODT</desc>
+			<desc>DjVu</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="11.3386" cy="158.74" width="22.68" height="8.50393"/>
 			<rect x="0" y="154.488" width="22.6772" height="8.50393" class="st12"/>
-			<text x="7.07" y="160.24" class="st13" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>ODT</text>		</g>
+			<text x="6.03" y="160.24" class="st13" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>DjVu</text>		</g>
 		<g id="shape21-72" v:mID="21" v:groupContext="shape" transform="translate(111.827,-28.3464)">
 			<title>시트.21</title>
 			<path d="M0 162.99 L16.16 162.99" class="st11"/>
@@ -195,11 +195,11 @@
 		</g>
 		<g id="shape13-89" v:mID="13" v:groupContext="shape" transform="translate(137.48,-34.0157)">
 			<title>시트.13</title>
-			<desc>HTML</desc>
+			<desc>ODT</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="11.3386" cy="158.74" width="22.68" height="8.50393"/>
 			<rect x="0" y="154.488" width="22.6772" height="8.50393" class="st12"/>
-			<text x="5.51" y="160.24" class="st13" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>HTML</text>		</g>
+			<text x="7.07" y="160.24" class="st13" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>ODT</text>		</g>
 		<g id="shape14-93" v:mID="14" v:groupContext="shape" transform="translate(140.173,-28.3464)">
 			<title>시트.14</title>
 			<path d="M0 162.99 L16.16 162.99" class="st11"/>
@@ -226,11 +226,11 @@
 		</g>
 		<g id="shape27-110" v:mID="27" v:groupContext="shape" transform="translate(165.827,-34.0157)">
 			<title>시트.27</title>
-			<desc>XML</desc>
+			<desc>HTML</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 			<v:textRect cx="11.3386" cy="158.74" width="22.68" height="8.50393"/>
 			<rect x="0" y="154.488" width="22.6772" height="8.50393" class="st12"/>
-			<text x="6.86" y="160.24" class="st13" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>XML</text>		</g>
+			<text x="5.51" y="160.24" class="st13" v:langID="1042"><v:paragraph v:horizAlign="1"/><v:tabList/>HTML</text>		</g>
 		<g id="shape28-114" v:mID="28" v:groupContext="shape" transform="translate(168.52,-28.3464)">
 			<title>시트.28</title>
 			<path d="M0 162.99 L16.16 162.99" class="st11"/>
