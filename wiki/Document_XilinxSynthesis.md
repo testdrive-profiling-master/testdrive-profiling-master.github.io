@@ -24,30 +24,21 @@ The path specified in `PROJECT_PATH` in the "Xilinx Synthesis" section becomes
 the project directory where synthesis is performed.
 Verilog sources will be searched in all subfolders including this folder to create a list.
 
-In the project directory, the setup environment for the Xilinx synthesis below is saved as
-a ".XilinxSynthesis" file, and additional sources required when synthesizing
-each individual file are listed in ".XilinxSynthesis.sources".
+In the project directory, the setup environment for the Xilinx synthesis below is saved as a ".XilinxSynthesis" file, and additional sources required when synthesizing each individual file are listed in ".XilinxSynthesis.sources".
 
-If there is no verilog source in the folder or
-a ".TestDrive.nosearch" or ".XilinxSynthesis.nosearch" file is searched,
-the folder is not added to the list. (Meitner project's %PROJECT%System/HDL/DUTs/top_template)
+If there is no verilog source in the folder or a ".TestDrive.nosearch" or ".XilinxSynthesis.nosearch" file is searched, the folder is not added to the list. (Meitner project's %PROJECT%System/HDL/DUTs/top_template)
 
 The extensions searched are only VHDL(.vhd), verilog(.v) and system verilog(.sv).
-In order for individual files not to be searched, before declaring entity (VHDL) or
-module (verilog/system verilog)
+In order for individual files not to be searched, before declaring entity (VHDL) or module (verilog/system verilog).
 If comments such as `/* HIDDEN */` are inserted on source file, the search will not work.
 
-.XilinxSynthesis.sources Sources that can be added include .v and .xdc,
-and can be added using the * (wildcard) character.
+.XilinxSynthesis.sources Sources that can be added include .v and .xdc, and can be added using the * (wildcard) character.
 You can add multiple sources at once.
 The include path includes %PROJECT%System\HDL by default.
-To specify an additional include path,
-it must start with '@', and when using TCL commands,
-it must start with '#'. '//' and ';' indicates the beginning of a comment.
+To specify an additional include path, it must start with '@', and when using TCL commands, it must start with '#'. '//' and ';' indicates the beginning of a comment.
 
 Search for '.XilinxSynthesis.sources' in the source path at the time of building.
-If the file is not found, go down to the project directory and
-search for each step's subfolder in order to apply the source.
+If the file is not found, go down to the project directory and search for each step's subfolder in order to apply the source.
 
 Search sequence example.) When building `%PROJECT%System\HDL\DUTs\A\B\C\top.v`, it looks in the order below.
 (Project folder : when `%PROJECT%System\HDL\DUTs` is specified.)
@@ -149,24 +140,17 @@ Usually, the timing below can be derived for one IP.
 * **Multicycle path**
 > There is no way to distinguish between multicycle path and 1 cycle path in HDL.
 So seperated special constraint settings are required.
-Nevertheless, the reason for using the multicycle path is that
-it has the advantage of easily improving clock speed without consuming F/F and HDL modification.
-In a general way, high clock speeds can be achieved by dividing a very large combinational path 
-into smaller data paths through multiple F/F slices.
-However, it is very difficult to design HDL by dividing to more smaller design
-into uniform time intervals.
+Nevertheless, the reason for using the multicycle path is that it has the advantage of easily improving clock speed without consuming F/F and HDL modification.
+In a general way, high clock speeds can be achieved by dividing a very large combinational path into smaller data paths through multiple F/F slices.
+However, it is very difficult to design HDL by dividing to more smaller design into uniform time intervals.
 <p align="center"><img width= "85%" src="img/multicycle_path.svg"></p>
 First, 1 cycle path refers to the path between F/F where the hold time is 0 and the setup time is 1.
 To put it more simply, it means that it receives input from the 0th clock and outputs from the 1st clock.
-If the input is received from the 0th clock and the output is taken from the Nth clock that
-is greater than 1, a higher clock can be used.
-For example, if you specify a constraint that receives input from the 0th clock and output from the 3rd clock,
-The setup time must be 3.
-However, the hold time is counted in the opposite direction from the second clock just before the 3rd clock.
-So hold time should be 2.
+If the input is received from the 0th clock and the output is taken from the Nth clock that is greater than 1, a higher clock can be used.
+For example, if you specify a constraint that receives input from the 0th clock and output from the 3rd clock, the setup time must be 3.
+However, the hold time is counted in the opposite direction from the second clock just before the 3rd clock, so hold time should be 2.
 In other words, the multicycle path designation of N cycle latencies has N setup time and (N-1) hold time.
-Lastly, using a multicycle path means maintaining the same value as the input clock latency, 
-so TCL scripts must use `set_multicycle_path ~[hold/setup]~ from ~ [cells]` as shown above.
+Lastly, using a multicycle path means maintaining the same value as the input clock latency, so TCL scripts must use `set_multicycle_path ~[hold/setup]~ from ~ [cells]` as shown above.
 
 At this time, if combinational delay time exists, a new setup/hold time may be created when connecting to another HDL design. If the setup/hold time exceeds the required operation speed, the measured slack time may be increased when connecting to another HDL design. Slack time is created, which causes the operation speed to slow down. Therefore, it can be said that a good design is to have a design that has as low a setup/hold time as possible and eliminates combination paths as much as possible.
 Slack time is a relative slack time to the required clock delay time, so the maximum operating speed can be calculated as follows.
@@ -188,20 +172,17 @@ When you click on a target file, compositing of that file will proceed.
 When you click on a folder, all sub-target files belonging to that folder are synthesized.
 If a ".XilinxSynthesis.nosearch" file is searched in a folder, the search in that folder will be invalid.
 
-The "folder icon" in front of the synthesis destination folder allows you to view the folder immediately, 
-and clicking on the remaining icons performs the following functions.
+The "folder icon" in front of the synthesis destination folder allows you to view the folder immediately, and clicking on the remaining icons performs the following functions.
 
 * Specify the current result as the reference value.
 	Saves the current synthesis result as the reference value.
-	This standard value is used for comparison when recombining after changing the source, 
-	and if there is a difference, the amount of improvement is displayed as a relative value.
+	This standard value is used for comparison when recombining after changing the source, and if there is a difference, the amount of improvement is displayed as a relative value.
 
 * View source
 	View the verilog source so that you can modify it directly.
 
 * View detailed Xilinx report
-	When synthesized, it is summarized so that you can see it at a glance,
-	but you can view more detailed information about the target file provided by Xilinx as follows.
+	When synthesized, it is summarized so that you can see it at a glance, but you can view more detailed information about the target file provided by Xilinx as follows.
 
 
 > Xilinx synthesis is performed after creating a folder named ".XilinxSynthesis.work" in the designated project folder.
@@ -210,15 +191,12 @@ and clicking on the remaining icons performs the following functions.
 #### 2) Timing
 
 Calculates the maximum operating frequency of the current HDL file.
-If there is clock synchronization, 
-normal MHz is displayed, but if only combination logic delay exists, 
-the maximum operating frequency is estimated and calculated using the combination delay time in gray.
+If there is clock synchronization, normal MHz is displayed, but if only combination logic delay exists, the maximum operating frequency is estimated and calculated using the combination delay time in gray.
 
 This figure is the operating speed obtained by pure F/F timing, excluding Setup/Hold time.
 
 Shaded folders show the slowest operating speed within the folder.
-In order for the design to operate properly, 
-the clock must be used at a lower speed than the operating speed here.
+In order for the design to operate properly, the clock must be used at a lower speed than the operating speed here.
 
 The clock is calculated using the formula below.
 
@@ -226,24 +204,16 @@ Clock(MHz) = 1000 / (clock_required_latency - slack_latency)
 
 #### 3) Setup/Hold time
 
-In addition to the operation time between F/Fs synchronized with the clock,
-the time required to reach the first F/F with the input port on the design, 
-and the time required to proceed to the last F/F and output port 
-are defined as setup time and hold time, respectively.
+In addition to the operation time between F/Fs synchronized with the clock, the time required to reach the first F/F with the input port on the design, and the time required to proceed to the last F/F and output port are defined as setup time and hold time, respectively.
 
-When there is a time (operation speed) between F/F, 
-this time is converted into % and output together with the time taken compared to this.
+When there is a time (operation speed) between F/F, this time is converted into % and output together with the time taken compared to this.
 
-The closer the % is to 100, the more red it appears, 
-meaning that the Setup/Hold time is the same as the operation speed. 
-If it exceeds 100, no matter what design it is attached to, 
-it will not be able to operate due to the "2) Timing" value, 
-resulting in an incorrect design.
+The closer the % is to 100, the more red it appears, meaning that the Setup/Hold time is the same as the operation speed.
+If it exceeds 100, no matter what design it is attached to, it will not be able to operate due to the "2) Timing" value, resulting in an incorrect design.
 
 #### 4) Combinational delay
 
-This is the time required for the operation of a combination logic between
-input and output that is not synchronized with the clock.
+This is the time required for the operation of a combination logic between input and output that is not synchronized with the clock.
 If "2) timing" value exists, this value is also displayed as a percentage of that value.
 The design must always be kept lower than 100% to satisfy the indicated operating speed.
 
@@ -262,19 +232,13 @@ The total usage is displayed as a percentage of the total number.
 When SRAM design is included, Block/Ultra RAM is consumed. 
 The number of BRAMs on an FPGA is very limited, so care must be taken when using them.
 
-If the maximum usage of BRAMs is exceeded, 
-LUT or Register memory will be consumed. 
-Not only does the synthesis time take a long time, 
-but the consumption is also very large, 
-so care must be taken not to exceed the maximum possible number.
+If the maximum usage of BRAMs is exceeded, LUT or Register memory will be consumed.
+Not only does the synthesis time take a long time, but the consumption is also very large, so care must be taken not to exceed the maximum possible number.
 
-In addition, even if the number of available SRAMs is sufficient, 
-if the size of the designed SRAM is judged to be very small or very large, 
-it is replaced with LUT memory.
+In addition, even if the number of available SRAMs is sufficient, if the size of the designed SRAM is judged to be very small or very large, it is replaced with LUT memory.
 In this case, it may be necessary to change the Synthesis option or change the designed SRAM design.
 
-It is recommended that you refer to the `SRAM_*.v` design 
-included in `%PROJECT%System/HDL/library/` whenever possible.
+It is recommended that you refer to the `SRAM_*.v` design included in `%PROJECT%System/HDL/library/` whenever possible.
 
 The total usage is displayed as a percentage of the total number.
 
@@ -282,8 +246,7 @@ The total usage is displayed as a percentage of the total number.
 #### 8) DSPs
 
 When you use operations such as multiplication in your design, you consume DSPs.
-If you use more than the limited number of DSPs on the FPGA, 
-your design's operation speed will rapidly degrade in performance.
+If you use more than the limited number of DSPs on the FPGA, your design's operation speed will rapidly degrade in performance.
 
 The total usage is displayed as a percentage of the total number.
 
@@ -296,13 +259,8 @@ The total usage is displayed as a percentage of the total number.
 'Combination delay' = maximum time taken for a circuit that does not pass through F/F from the input port to the output port. (Expression condition: There must be a path without F/F between the input port and the output port.)
 
 
-Here, the operating speed is the maximum Hz value
-that can be operated based on the maximum time taken between F/F,
-so the 'Setup time', 'Hold time', and 'Combination delay' 
-must be small and within a range that does not restrict this operating speed.
-In particular, 'combined delay' should be avoided as much as possible as 
-it has a negative effect on the 'Setup/Hold time' of 
-the module when connected to other modules.
+Here, the operating speed is the maximum Hz value that can be operated based on the maximum time taken between F/F, so the 'Setup time', 'Hold time', and 'Combination delay' must be small and within a range that does not restrict this operating speed.
+In particular, 'combined delay' should be avoided as much as possible as it has a negative effect on the 'Setup/Hold time' of the module when connected to other modules.
 
 
 ### [:fa-arrow-left: Back](?top.md)
