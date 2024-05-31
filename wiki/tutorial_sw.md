@@ -98,8 +98,96 @@ drwxr-xr-x 1 USER None     0 Apr 15 12:32 ..
 > :fa-send-o:Tip : After debugging, make sure the program is closed before rebuilding.
  Build results cannot be overwritten without exiting the program.
 
-## 3. Encryption and Licensing Management
+## 3. Encryption and Decryption on your sources.
 
-...(under construction...)
+If you want to use source encryption/decryption, you must follow the steps below.
+* First, add ```SRCS_ENCRYPTED``` variable to your ```Makefile``` as follow.
+>```makefile
+...
+SRCS			:= \
+	$(wildcard $(SRC_PATH)/*.cpp) \
+	$(wildcard $(SRC_PATH)/*.c)
+>
+SRCS_ENCRYPTED	:= \
+	$(wildcard $(SRC_PATH)/*.encrypted)
+...
+```
+* Create your own public key of <u><span style="color:blue">pass code</span></u> on your project folder with '**<i>TestDrive_LM</i>**'.
+> **<span style="color:red"><u>DO NOT LOSE</u> THIS PASS CODE. AND <u>DO NOT SHARE</u> THIS WITH UNAUTHORIZED PEOPLE.</span>**
+> 게If you don't, there is no way to decrypt the sources.
+```bash
+>> TestDrive_LM create [your_pass_code]
+*I: Done!
+    Your public key file is '.TestDrive.public_key'
+>
+    ** Remember! Do not lose your public key/string!
+    ** It is not available to create a private key without a public key/string.
+```
+> It will create '.TestDrive.public_key' file on your project.
+> This file must exist in your project or a higher level folder.
+* Do encrypt your source files.
+> Encypt sources with command.
+```bash
+>> make encrypt
+>- Encrypting... : main.cpp
+Encryption is done!
+```
+You can find new encrypted file (main.cpp.encrypted).
+```bash
+>> ls
+Makefile  main.cpp  main.cpp.encrypted
+```
+And do cleanup original sources.
+```bash
+>> make distclean
+Cleanup is done.
+Dist-Cleanup is done.
+>
+>> ls
+Makefile  main.cpp.encrypted
+```
+It will delete your all original source codes. Once again <span style="color:red">Do not lose your own pass code</span>.
+* Share your project with colleagues.
+* Do decrypt the sources
+> The colleagues have no original sources.
+> So they do decrypt the sources.
+```bash
+>> make decrypt
+>- Decrypting... : main.cpp.encrypted
+>*E: No private key. Contact your license manager with following your private hash code.
+>
+>    - Your private hash : 3F3D714ECE4DA2321B6B747AC42FD08A6F0F4F3CAC2DA7AA59A77483963DE6A3DCDFABA1542D8E8974C2696188B5AF7389088F1FA68CBD60EAC1AFFC901C31D6
+>
+make: *** [D:/Project/Profiles/Common/include/config.mk;198: main.cpp.decrypted] Error 1
+```
+But they can't!
+They need to install the **'private key'** to decrypt. __Private key has a different value on every single host.__ 
+There are two options to install a private key.
+First! You can install directly on the host PC.
+```bash
+>> TestDrive_LM install
+>    > Enter Public key   :
+>
+Your Private key : 21A7421ABCA1B25E005D065D60289823FC082ECE1B24744536DF48EB54CA4CBA
+*I: Done.
+```
+If you can't access directly to the host PC, you need to get the host's **private hash code**(```3F3D714ECE...```) as can be seen in the decrypt error above.
+And then, get private key with on your PC like below.
+```bash
+>> TestDrive_LM private [your_pass_code]  3F3D714ECE...
+>
+Your Private key : 21A7421ABCA1B25E005D065D60289823FC082ECE1B24744536DF48EB54CA4CBA
+```
+You must share this private key with your colleagues and register them as follows.
+```bash
+>> TestDrive_LM register 21A7421ABCA1B25E005D065D60289823FC082ECE1B24744536DF48EB54CA4CBA
+*I: Done.
+```
+Congratulations! Now, your colleagues can decrypt the sources.
+```
+>> make decrypt
+>- Decrypting... : main.cpp.encrypted
+Decryption is done!
+```
 
 ### [:fa-arrow-left: Back](?top.md)
