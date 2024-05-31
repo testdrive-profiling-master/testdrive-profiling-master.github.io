@@ -112,11 +112,11 @@ SRCS_ENCRYPTED	:= \
 	$(wildcard $(SRC_PATH)/*.encrypted)
 ...
 ```
-* Create your own public key of <u><span style="color:blue">pass code</span></u> on your project folder with '**<i>TestDrive_LM</i>**'.
-> **<span style="color:red"><u>DO NOT LOSE</u> THIS PASS CODE. AND <u>DO NOT SHARE</u> THIS WITH UNAUTHORIZED PEOPLE.</span>**
-> 게If you don't, there is no way to decrypt the sources.
+* Create your own <u><span style="color:blue">public key file</span></u> on your project folder with '**<i>TestDrive_LM</i>**'.
+> **<span style="color:red"><u>DO NOT LOSE</u> THIS PUBLIC KEY CODE. AND <u>DO NOT SHARE</u> THIS WITH UNAUTHORIZED PEOPLE.</span>**
+> If you don't, there is no way to decrypt the sources.
 ```bash
->> TestDrive_LM create [your_pass_code]
+>> TestDrive_LM create [public_key_code]
 *I: Done!
     Your public key file is '.TestDrive.public_key'
 >
@@ -132,7 +132,7 @@ SRCS_ENCRYPTED	:= \
 >- Encrypting... : main.cpp
 Encryption is done!
 ```
-You can find new encrypted file (main.cpp.encrypted).
+You can find new encrypted files (***.cpp.encrypted**).
 ```bash
 >> ls
 Makefile  main.cpp  main.cpp.encrypted
@@ -146,11 +146,12 @@ Dist-Cleanup is done.
 >> ls
 Makefile  main.cpp.encrypted
 ```
-It will delete your all original source codes. Once again <span style="color:red">Do not lose your own pass code</span>.
+All original of encrypted sources will be deleted. Once again <span style="color:red">Do not lose your own public key code</span>.
 * Share your project with colleagues.
 * Do decrypt the sources
 > The colleagues have no original sources.
-> So they do decrypt the sources.
+> So they do decrypt the sources with following command. But they can't.
+Because **no private key** is installed their own PC.
 ```bash
 >> make decrypt
 >- Decrypting... : main.cpp.encrypted
@@ -160,7 +161,6 @@ It will delete your all original source codes. Once again <span style="color:red
 >
 make: *** [D:/Project/Profiles/Common/include/config.mk;198: main.cpp.decrypted] Error 1
 ```
-But they can't!
 They need to install the **'private key'** to decrypt. __Private key has a different value on every single host.__ 
 There are two options to install a private key.
 First! You can install directly on the host PC.
@@ -171,23 +171,43 @@ First! You can install directly on the host PC.
 Your Private key : 21A7421ABCA1B25E005D065D60289823FC082ECE1B24744536DF48EB54CA4CBA
 *I: Done.
 ```
-If you can't access directly to the host PC, you need to get the host's **private hash code**(```3F3D714ECE...```) as can be seen in the decrypt error above.
-And then, get private key with on your PC like below.
+Or if you can't access directly to the host PC, 
+you need to get the colleagues' **private hash code**(```3F3D714ECE...```) as can be seen in the decrypt error above.
+And then, **generate private key** with on your PC like below.
 ```bash
->> TestDrive_LM private [your_pass_code]  3F3D714ECE...
+>> TestDrive_LM private [public_key_code]  3F3D714ECE...
 >
 Your Private key : 21A7421ABCA1B25E005D065D60289823FC082ECE1B24744536DF48EB54CA4CBA
 ```
-You must share this private key with your colleagues and register them as follows.
+You must share this private key with your colleagues and they can do register the private key as follows.
 ```bash
 >> TestDrive_LM register 21A7421ABCA1B25E005D065D60289823FC082ECE1B24744536DF48EB54CA4CBA
 *I: Done.
 ```
-Congratulations! Now, your colleagues can decrypt the sources.
+:fa-thumbs-o-up: Congratulations! Now, your colleagues can decrypt the sources.
 ```
 >> make decrypt
 >- Decrypting... : main.cpp.encrypted
 Decryption is done!
 ```
+* **Summary**
+>* Source build
+>	* Encrypt
+>		```make encrypt```
+>	* Decrypt
+>		```make decrypt```
+>	* Clean-up originals
+>		```make distclean```
+>* Create public key
+>	* Create public key file
+>		```TestDrive_LM create```
+>* Install privete key
+>	* Directly Install
+		```TestDrive_LM install```
+>	* Remotely Install
+>		* Get private key from private hash code
+>		```TestDrive_LM private [public_key_code] [private_hash_code]```
+>		* Register private key
+>		```TestDrive_LM register [private_key]```
 
 ### [:fa-arrow-left: Back](?top.md)
