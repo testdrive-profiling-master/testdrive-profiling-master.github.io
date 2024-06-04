@@ -112,7 +112,7 @@ SRCS_ENCRYPTED	:= \
 	$(wildcard $(SRC_PATH)/*.encrypted)
 ...
 ```
-* Create your own <u><span style="color:blue">public key file</span></u> on your project folder with '**<i>TestDrive_LM</i>**'.
+* Create your own encrypted(SHA256+KISA128+α) <u><span style="color:blue">public key file</span></u> on your project folder with '**<i>TestDrive_LM</i>**'.
 > **<span style="color:red"><u>DO NOT LOSE</u> THIS PUBLIC KEY CODE. AND <u>DO NOT SHARE</u> THIS WITH UNAUTHORIZED PEOPLE.</span>**
 > If you don't, there is no way to decrypt the sources.
 ```bash
