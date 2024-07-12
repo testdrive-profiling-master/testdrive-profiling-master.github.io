@@ -27,12 +27,12 @@
         <script type="text/javascript">
 			sub_url			= location.href.split("?");
 			file_name		= "top.md";
-			language		= "en";
+			bookmark		= "";
 			if(sub_url[1]) {
-				tokens			= sub_url[1].split("&");
+				tokens			= sub_url[1].split("#");
 				file_name		= tokens[0];
 				if(tokens[1]) {
-					language		= tokens[1];
+					bookmark		= tokens[1];
 				}
 			}
 			editormd.katexURL = {
@@ -40,9 +40,9 @@
 				css : "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min"
 			};
 		
+			var testEditormdView;
+
             $(function() {
-                var testEditormdView;
-                
                 $.get(file_name, function(markdown) {
                     
 				    testEditormdView = editormd.markdownToHTML("editormd-view", {
