@@ -210,4 +210,19 @@ Decryption is done!
 >		* Register private key
 >		```TestDrive_LM register [private_key]```
 
+## 4. Deploy your binaries.
+
+To distribute build results without installing Testdrive, just enter the command ```make deploy```.
+Then, dependent .dll files are automatically copied to the same folder as the project result binary.
+
+```bash
+> make deploy
+Compilation is done!
+./test.exe
+*I: Check library dependencies...
+*I: No MinGW library is required for this.
+*I: Done!
+```
+> :fa-send-o:Tip : Basically, the results from the 'UCRT' version of the MinGW development environment have minimal dependency.
+
 ### [:fa-arrow-left: Back](?top.md)
