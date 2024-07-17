@@ -30,7 +30,33 @@ create_project c [Project_Name]
 At this moment, The default project will be created with the specified 'Project_Name' name.
 > :fa-send-o:Tip : By using "create_project util [Project_Name]" instead of "create_project c [Project_Name]", you can use the extended 'util_framework' functionality.
 
-## 2. Build
+## 2. Acquire additional libraries
+If you want to install additional C/C++ libraries, use msys64's ```pacman```.
+You can find various libraries as shown below, but be sure to select and install the Microsoft's **<u>UCRT</u>**(Universal C Runtime) version of the library.
+```bash
+> pacman -Sl | grep opencv
+clangarm64 mingw-w64-clang-aarch64-gst-plugin-opencv 1.24.5-3
+clangarm64 mingw-w64-clang-aarch64-opencv 4.10.0-2
+clangarm64 mingw-w64-clang-aarch64-python-opencv 4.10.0-2
+mingw64 mingw-w64-x86_64-gst-plugin-opencv 1.24.5-3
+mingw64 mingw-w64-x86_64-opencv 4.10.0-2
+mingw64 mingw-w64-x86_64-python-opencv 4.10.0-2
+ucrt64 mingw-w64-ucrt-x86_64-gst-plugin-opencv 1.24.5-3
+ucrt64 mingw-w64-ucrt-x86_64-opencv 4.10.0-2 [installed]
+ucrt64 mingw-w64-ucrt-x86_64-python-opencv 4.10.0-2 [installed]
+clang64 mingw-w64-clang-x86_64-gst-plugin-opencv 1.24.5-3
+clang64 mingw-w64-clang-x86_64-opencv 4.10.0-2
+clang64 mingw-w64-clang-x86_64-python-opencv 4.10.0-2
+
+
+```
+For example, opencv can be installed with the command below.
+```
+> pacman -S mingw-w64-ucrt-x86_64-opencv
+```
+> :fa-send-o:Tip : The **<u>UCRT</u>** version of MinGW uses Microsoft's CRT library directly, so it has minimal additional library dependencies.
+
+## 3. Build
 Below codes are the 'Makefile' of the created project.
 ```bash
 #-------------------------------------------------
@@ -72,7 +98,7 @@ The variable properties specified here are as follows.
 
 Build command is `make`.
 
-## 2. Debugging
+## 4. Debugging
 For debugging, use the eclipse IDE environment as follows, and execute `.eclipse` in the created project.
 ```dos
 C:\Project\Test>ls -al
@@ -98,7 +124,7 @@ drwxr-xr-x 1 USER None     0 Apr 15 12:32 ..
 > :fa-send-o:Tip : After debugging, make sure the program is closed before rebuilding.
  Build results cannot be overwritten without exiting the program.
 
-## 3. Encryption and Decryption on your sources.
+## 5. Encryption and Decryption on your sources.
 
 If you want to use source encryption/decryption, you must follow the steps below.
 * First, add ```SRCS_ENCRYPTED``` variable to your ```Makefile``` as follow.
@@ -210,7 +236,7 @@ Decryption is done!
 >		* Register private key
 >		```TestDrive_LM register [private_key]```
 
-## 4. Deploy your binaries.
+## 6. Deploy your binaries.
 
 To distribute build results without installing Testdrive, just enter the command ```make deploy```.
 Then, dependent .dll files are automatically copied to the same folder as the project result binary.
@@ -223,6 +249,6 @@ Compilation is done!
 *I: No MinGW library is required for this.
 *I: Done!
 ```
-> :fa-send-o:Tip : Basically, the results from the 'UCRT' version of the MinGW development environment have minimal dependency.
+> :fa-send-o:Tip : Basically, the results from the 'UCRT(Microsoft's Universal C Runtime)' version of the MinGW development environment have minimal dependency.
 
 ### [:fa-arrow-left: Back](?top.md)
