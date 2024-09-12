@@ -5,7 +5,7 @@
 </p>
 
 docgen is a tool that refers to a template WORD (.docx) file and creates a new WORD (.docx) and various documents such as PDF/HTML/DjVu through Markdown + HTML + Lua script.
-> :fa-send-o:Tip : To use all of docgen's features, additional installation of Microsoft's WORD, Excel/Visio(optional) is required. This manual below was also produced by DocGen.
+> :fa-send-o:Tip : To use all of docgen's features, additional installation of Microsoft's WORD, Excel/Visio(optional) and LibreOffice is required. This manual below was also produced by DocGen.
 
 To write appropriate content, please see the more detailed manual below.
 
