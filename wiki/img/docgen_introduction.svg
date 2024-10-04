@@ -498,11 +498,11 @@
 		</g>
 		<g id="shape196-248" v:mID="196" v:groupContext="shape" transform="translate(204.094,-123.307)">
 			<title>시트.196</title>
-			<desc>Visio draw.io Draw</desc>
+			<desc>.vsdx .drawio .odg</desc>
 			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197" v:verticalAlign="0"/>
 			<v:textRect cx="8.50394" cy="156.614" width="17.01" height="12.7559"/>
 			<rect x="0" y="150.236" width="17.0079" height="12.7559" class="st2"/>
-			<text x="0" y="152.94" class="st14" v:langID="1042"><v:paragraph/><v:tabList/>Visio<v:newlineChar/><tspan x="0"
-						dy="1.2em" class="st15">draw.io<v:newlineChar/></tspan><tspan x="0" dy="1.2em" class="st15">Draw</tspan></text>		</g>
+			<text x="0" y="152.94" class="st14" v:langID="1042"><v:paragraph/><v:tabList/>.vsdx<v:newlineChar/><tspan x="0"
+						dy="1.2em" class="st15">.drawio<v:newlineChar/></tspan><tspan x="0" dy="1.2em" class="st15">.odg</tspan></text>		</g>
 	</g>
 </svg>
