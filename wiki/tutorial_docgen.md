@@ -36,7 +36,7 @@ C:\Project\TestDoc> docgen main.md
 
 C:\Project\TestDoc> Header_Name_userguide_rev1.0.pdf
 ```
-Modify main.md as you want. And run '**docgen main.md**' again.
+Modify main.md as you want. And run ```docgen main.md``` (or ```build.bat```) again.
 
 ## 2. Pre-organized project example with sharing document template
 #### Quick approach) "Project creation :fa-arrow-right: build" series of an example
