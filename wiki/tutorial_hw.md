@@ -11,11 +11,11 @@ C:\Users\HyungKi>cd /d D:\Project\Profiles\Meitner\System\HDL\DUTs\Test
 
 D:\Project\Profiles\Meitner\System\HDL\DUTs\Test>.eclipse
 ```
-> TestDrive 를 재시작 후 `속성 뷰`의 **"시스템/시뮬레이션 탑 디자인"** 에서 생성한 프로젝트를 선택한다.
+> TestDrive 를 재시작 후 `속성 뷰`의 **"System/Simulation top design"** 에서 생성한 프로젝트를 선택한다.
 `프로파일 뷰` 에서 **"System/Build/Build H/W"** 를 실행하여 직접 컴파일하거나,
 `속성 뷰`의 **"빌드 자동화"** 를 선택하면 소스 변경시 자동으로 컴파일 된다.
 
-## 1. 프로젝트 생성
+## 1. Project creation
 verilog 프로젝트는 TestDrive 상의 관리가 필요하므로 특정 폴더에서 생성합니다.
 `%PROJECT%System/HDL/DUTs` 위치에서 아래의 명령을 실행하여 프로젝트를 생성합니다.
 
@@ -29,7 +29,7 @@ Or
 create_project v_bare [Project_Name]
 ```
 
-## 2. 프로젝트 선택 및 빌드
+## 2. Project select and build
 프로젝트 빌드는 TestDrive 를 통해서만 가능하며,
 `현재 시뮬레이션`으로 선택과 `빌드` 과정이 필요합니다.
 이를 위해서 TestDrive 를 재시작 후, 아래와 같이 선택합니다.
