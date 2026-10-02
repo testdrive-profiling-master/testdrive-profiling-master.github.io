@@ -2,6 +2,11 @@
 
 The QEMU project provided by TestDrive Profiling Master treats Verilog HDL as a virtual PCIe device, offering a fully functional simulation environment within a real operating system.
 
+This enables **simultaneous development and testing without the actual hardware**.
+* H/W HDL design
+* S/W Driver (Windows/Linux)
+* Firmware (UEFI)
+
 First at all, you need to enable `hardware virtualization` on CMOS setup.
 And you must install windows optional feature `Hyper-V`.
 Type the below command on your Powershell(adminstrator).
@@ -26,7 +31,7 @@ Copy .iso image file to your QEMU project folder, then you can do install new OS
 
 Now double click on the profile view link & install OS.
 > :fa-send-o:Tip : The initial process of downloading and compiling the QEMU source code takes **approximately 30 minutes**. Additionally, it automatically checks for new updates every week, allowing for a rebuild and re-installation.
-> When the virtual machine reboots or shuts down, QEMU may exit or enter a halted state. This is normal behavior; simply restart it after the shutdown.
+> When the virtual machine reboots or shuts down, QEMU may exit or enter a halted state. This is normal behavior; simply restart it after the shutdown the program.
 
 ### 3. Installation of preferred OS
 
