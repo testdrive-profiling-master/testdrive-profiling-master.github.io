@@ -7,12 +7,11 @@ This enables **simultaneous development and testing without the actual hardware*
 * S/W Driver (Windows/Linux)
 * Firmware (UEFI)
 
-First at all, you need to enable `hardware virtualization` on CMOS setup.
-And you must install windows optional feature `Hyper-V`.
-Type the below command on your Powershell(adminstrator).
+First at all, you need to enable `hardware virtualization` on CMOS setup. And you must install windows optional feature `Hyper-V`. Type the below command on your Powershell(adminstrator).
 ```bash
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 ```
+And you should run **"System/Build/Build All"** on profile view for ready.
 
 ### 1. Create new QEMU project
 ```bash
