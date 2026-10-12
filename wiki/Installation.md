@@ -13,10 +13,10 @@ It can be installed only in **Windows 7/10/11** or higher 64bit OS environment.
 ## 1. Easy way
 It help to install full feature of 'TestDrive Profiling Master'.
 <i>**Download and Run**</i> below link.
-> **[TestDrive Profiling Master Installer](../download/TestDrive_Profiling_Master.exe)** - (Automatic installation from git repositories.)
->( It is **strongly** recommended to install **[git](https://git-scm.com/downloads)** and **[tortoisegit](https://tortoisegit.org/download/)** separately. )
+> **[TestDrive Profiling Master Installer](../download/TestDrive_Profiling_Master.zip)** - (Automatic installation from git repositories.)
+>( It is **strongly** recommended to install **[git](https://git-scm.com/downloads)** and **[tortoisegit](https://tortoisegit.org/download/)** separately.)
 
-#### (1) Run 'TestDrive_Profiling_Master.exe'
+#### (1) Extract .zip & Run 'TestDrive_Profiling_Master.exe'
 ```bash
 ******************************************************
 ****        TestDrive Automatic Installer.        ****
