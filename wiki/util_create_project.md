@@ -10,26 +10,26 @@ Usage: create_project  [--help] type project_name
 
       --help                display this help and exit
   type                      Template project type
-                            'testdrive'              : TestDrive project
+                            'testdrive'              : TestDrive project [!]
                             'c', 'c++', 'cpp'        : C++(Pure) project
                             'util'                   : C++(Util) project
                             'lua'                    : C++(Lua) project
                             'webgui'                 : C++(WebGUI) project
-                            'v', 'verilog'           : verilog project
-                            'v_bare', 'verilog_bare' : bared verilog project
-                            'verigen'                : verigen project
+                            'v', 'verilog'           : verilog project [!]
+                            'v_bare', 'verilog_bare' : bared verilog project [!]
+                            'verigen'                : verigen project [!]
                             'docgen'                 : docgen project
                             'docgen_simplified'      : docgen simplified project
                             'svelte'                 : Svelte.js project
                             'uefi'                   : UEFI firmware project
-                            'qemu'                   : QEMU project
+                            'qemu'                   : QEMU project [!]
   project_name              Project name
 
 
   ex) create_project cpp test
 
-  * For some projects(testdrive, verilog, verigen, qemu...),
-    you must run the TestDrive project at least once.
+ [!] This project will be created under the latest TestDrive project.
+     So you must run the TestDrive project at least once.
 ```
 **command-line Example**
 ```bash
