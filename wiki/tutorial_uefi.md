@@ -92,9 +92,19 @@ Default build target is `DEBUG`, and you can build the `RELEASE` target as below
 ```
 
 You can follow the same process for the Eclipse-IDE environment by executing `.eclipse.bat`.
-![uefi_eclipse_ide](img/uefi_eclipse.webp)
+![uefi_eclipse_ide](img/uefi_eclipse.png)
 
 If you want to change build configuration to `RELEASE`, select `Release` on context menu, and press `CTRL+B` key to build.
 ![your_project_folder](img/uefi_configration.webp)
+
+### 3. Simulation on QEMU
+First, check the [QEMU project for TestDrive](?tutorial_qemu.md) and create your own project.
+At this point, you must specify the `UEFI system bios`(OVMF.fd:`%TESTDRIVE_PROFILE%common/bin/qemu/share/`), enable `BIOS_DEBUG`, and select the `UEFI driver`(ROM_FILE) you have just built, as shown below.
+
+![qemu_setting_for_uefi](img/uefi_qemu_setting.webp)
+
+Then, when you run QEMU in the TestDrive environment, you will be able to see the `UefiMain() : Hello world!` debug output.
+![qemu_debugging_of_uefi](img/uefi_qemu_log.png)
+
 
 ### [:fa-arrow-left: Back](?top.md)

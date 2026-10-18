@@ -6,7 +6,7 @@
 	* [Hardware(Verilog/DPI) project tutorial](?tutorial_hw.md)
 	* [DocGen(Document Generator) project tutorial](?tutorial_docgen.md)
 	* [QEMU(virtual machine) project tutorial](?tutorial_qemu.md)
-	* [Firmware(UEFI) project tutorial](?tutorial_uefi.md)
+	* [Firmware(UEFI : Unified Extensible Firmware Interface) project tutorial](?tutorial_uefi.md)
 * #### Document Profiles
 	* Common
 		* [System Manager](?Document_SystemManager.md)
