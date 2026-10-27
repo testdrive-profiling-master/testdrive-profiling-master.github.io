@@ -9,21 +9,28 @@ Project generator for TestDrive Profiling Master.
 Usage: create_project  [--help] type project_name
 
       --help                display this help and exit
-  type                      Template project type
-                            'testdrive'              : TestDrive project [!]
-                            'c', 'c++', 'cpp'        : C++(Pure) project
-                            'util'                   : C++(Util) project
-                            'lua'                    : C++(Lua) project
-                            'webgui'                 : C++(WebGUI) project
-                            'v', 'verilog'           : verilog project [!]
-                            'v_bare', 'verilog_bare' : bared verilog project [!]
-                            'verigen'                : verigen project [!]
-                            'docgen'                 : docgen project
-                            'docgen_simplified'      : docgen simplified project
-                            'svelte'                 : Svelte.js project
-                            'uefi'                   : UEFI firmware project
-                            'qemu'                   : QEMU project [!]
+  type                      Template type
+                            'testdrive'              : TestDrive [!]
+                            'c', 'c++', 'cpp'        : C++(Pure)
+                            'util'                   : C++(Util)
+                            'lua'                    : C++(Lua)
+                            'webgui'                 : C++(WebGUI)
+                            'v', 'verilog'           : verilog [!]
+                            'v_bare', 'verilog_bare' : bared verilog [!]
+                            'verigen'                : verigen [!]
+                            'docgen'                 : docgen
+                            'docgen_simplified'      : docgen simplified
+                            'svelte'                 : Svelte.js
+                            'uefi','uefi_driver'     : UEFI driver [!]
+                            'uefi_application'       : UEFI application [!]
+                            'qemu'                   : QEMU [!]
   project_name              Project name
+
+
+  ex) create_project cpp test
+
+ [!] This project will be created under the latest TestDrive project.
+     So you must run the TestDrive project at least once.
 
 
   ex) create_project cpp test
@@ -77,11 +84,15 @@ For detailed information, please refer to the [docgen](?tutorial_docgen.md) docu
 Create a document development project that utilizes docgen. The top-level project file begins with a `markdown` script.
 For detailed information, please refer to the [docgen](?tutorial_docgen.md) documentation.
 
-#### 11) uefi
-Create a UEFI development project in an Eclipse IDE environment that utilizes the EDK2 compiler.
+#### 11) uefi, uefi_driver
+Create a UEFI driver development project in an Eclipse IDE environment that utilizes the EDK2 compiler.
 An initial EDK2 installation is performed during the first build, taking approximately 20 minutes.
 
-#### 12) qemu
+#### 12) uefi_application
+Create a UEFI application development project in an Eclipse IDE environment that utilizes the EDK2 compiler.
+An initial EDK2 installation is performed during the first build, taking approximately 20 minutes.
+
+#### 13) qemu
 This sets up a QEMU project capable of running virtual devices.
 It builds QEMU once upon initial execution and checks for updates on a weekly basis, allowing for a rebuild if updates are available.
 The build process takes approximately 30 minutes.

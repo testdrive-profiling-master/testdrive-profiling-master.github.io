@@ -19,6 +19,7 @@ Usage: edk2  [--help] command [-a TARGETARCH] [-b BUILDTARGET] [-p PLATFORMFILE]
                             update  : check for update of EDK2
                             build   : build project
                             clean   : clean project
+                            qemu    : create QEMU project for this
                             dump    : Dump ROM(-m option) image's header
   -a TARGETARCH             Target architecture (default:X64)
                             ARCHS is one of list: IA32, X64, AARCH64, RISCV64
@@ -42,12 +43,23 @@ The EDKII tool's installation target folder is `%TESTDRIVE_PROFILE%Common/bin/ed
 ### 2. Create new UEFI project & Do build
 
 Using the [create_project](?util_create_project.md) utility, you can create a basic UEFI project as follows:
+
+[DRIVER]
 ```bash
->create_project uefi "test_uefi"
-*I: Create UEFI firmware project : 'test_uefi'
+>create_project uefi_driver "test_uefi"
+*I: Create UEFI driver project : 'test_uefi'
 
 Run '.eclipse' to open your project's IDE environment.
 ```
+
+[APPLICATION]
+```bash
+>create_project uefi_application "test_uefi"
+*I: Create UEFI application project : 'test_uefi'
+
+Run '.eclipse' to open your project's IDE environment.
+```
+
 
 And now you can build with `make` command.
 ```bash
@@ -88,7 +100,7 @@ Image 1 -- Offset 0x0
 Final compressed UEFI rom file is located at `bin/HelloWorld.rom`.
 Default build target is `DEBUG`, and you can build the `RELEASE` target as below.
 ```bash
->make BUILD_TARGET=RELEASE
+>make release
 ```
 
 You can follow the same process for the Eclipse-IDE environment by executing `.eclipse.bat`.
@@ -106,5 +118,12 @@ At this point, you must specify the `UEFI system bios`(OVMF.fd:`%TESTDRIVE_PROFI
 Then, when you run QEMU in the TestDrive environment, you will be able to see the `UefiMain() : Hello world!` debug output.
 ![qemu_debugging_of_uefi](img/uefi_qemu_log.png)
 
+### 4. Make USB bootable disk for UEFI (For Application)
+
+```bash
+>make usb
+```
+DRIVE 'S' : copy your .efi application image file here[EFI/BOOT/BOOTX64.efi], 128MB
+DRIVE 'T' : FAT32 extra disk, rest of disk
 
 ### [:fa-arrow-left: Back](?top.md)
