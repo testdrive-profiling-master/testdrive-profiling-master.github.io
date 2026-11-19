@@ -18,7 +18,7 @@
 		* [System Chart](?Document_SystemChart.md)
 * #### Utils
 	* [create_project](?util_create_project.md) : Project generator for various S/W and H/W project
-	* [codegen (manual is under-construction)](../download/codegen_userguide.pdf) : code generator (Lua custom for TestDrive)
+	* [codegen](../download/codegen_userguide.pdf) : code generator (Lua custom for TestDrive)
 		* [docgen](?tutorial_docgen.md) ([korean version](../download/docgen_userguide_ko.pdf), [english version](../download/docgen_userguide_en.pdf)) : document generator (.docx, .pdf)
 		* [verigen](../download/verigen_userguide.pdf) : verilog generator (**Verilog** + **Lua** script compiler)
 		* [codgen utility list...](?codegen_utility_list.md)
